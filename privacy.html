@@ -40,10 +40,10 @@
 <div class="doc">
   <a class="back" href="/">← Merra Booking</a>
   <h1>Политика конфиденциальности</h1>
-  <p class="meta">Версия 1.1 · Дата вступления в силу: 11 октября 2026 · merrabooking.me</p>
+  <p class="meta">Версия 1.2 · Дата вступления в силу: 11 октября 2026 · merrabooking.me</p>
 
   <div class="card">
-    <p><strong style="color:var(--txt)">Кто обрабатывает ваши данные:</strong> <span class="todo">[ПОЛНОЕ НАИМЕНОВАНИЕ КОМПАНИИ/ИП — заполняет владелец]</span>, зарегистрированное(ый) в <span class="todo">[Казахстан — подтвердить]</span>, адрес: <span class="todo">[адрес — заполняет владелец]</span>, email: <a href="mailto:privacy@merrabooking.me">privacy@merrabooking.me</a>. Далее — «Merra Booking», «мы».</p>
+    <p><strong style="color:var(--txt)">Кто обрабатывает ваши данные:</strong> Разработчик проекта Merra Booking (физическое лицо, Казахстан; регистрация ИП/ТОО планируется — политика будет обновлена), контакт по вопросам данных: <a href="mailto:privacy@merrabooking.me">privacy@merrabooking.me</a>. Далее — «Merra Booking», «мы».</p>
     <p style="margin-top:10px">Эта политика описывает обработку персональных данных при использовании сайта <code>merrabooking.me</code>, программного обеспечения Merra Booking (далее — «Сервис») и связанных интеграций, включая WhatsApp. Роль Merra Booking зависит от конкретной обработки и указана в разделе 3.</p>
   </div>
 
@@ -71,14 +71,14 @@
   <h2>4. Цели, основания и сроки</h2>
   <table>
     <tr><th>Категория</th><th>Цель</th><th>Основание</th><th>Срок</th></tr>
-    <tr><td>Контакты из обращений с сайта (имя, email, телефон)</td><td>Связаться с заявителем, подготовить предложение</td><td>Меры по подготовке договора / согласие</td><td>До закрытия обращения + <span class="todo">[срок — владелец, напр. 12 мес]</span></td></tr>
+    <tr><td>Контакты из обращений с сайта (имя, email, телефон)</td><td>Связаться с заявителем, подготовить предложение</td><td>Меры по подготовке договора / согласие</td><td>До закрытия обращения + 12 месяцев</td></tr>
     <tr><td>Номер WhatsApp, сообщения записи, напоминания</td><td>Приём и сопровождение записи</td><td>Поручение Партнёра (основание определяет Партнёр)</td><td>По правилам хранения Партнёра; состояние диалога бота — 24 часа</td></tr>
     <tr><td>История визитов, лояльность (баллы, купоны)</td><td>Программа лояльности, аналитика Партнёра</td><td>Поручение Партнёра</td><td>По правилам Партнёра; срок действия баллов задаёт Партнёр</td></tr>
     <tr><td>Отпечаток номера удалённого клиента (необратимый хеш)</td><td>Защита от обхода блокировки перерегистрацией (антифрод)</td><td>Законный интерес Партнёра и Merra Booking (безопасность)</td><td>Бессрочно, до отзыва Партнёром</td></tr>
-    <tr><td>Данные аккаунта Партнёра и сотрудников (имя, логин, роль)</td><td>Работа CRM, разграничение доступа</td><td>Договор с Партнёром</td><td>Пока действует аккаунт + <span class="todo">[срок — владелец]</span></td></tr>
-    <tr><td>Технические журналы безопасности (попытки доступа, отказы)</td><td>Защита сервиса, расследование инцидентов</td><td>Законный интерес / обязанность</td><td><span class="todo">[срок — владелец, напр. 180 дней]</span></td></tr>
+    <tr><td>Данные аккаунта Партнёра и сотрудников (имя, логин, роль)</td><td>Работа CRM, разграничение доступа</td><td>Договор с Партнёром</td><td>Пока действует аккаунт + до удаления аккаунта + 30 дней в резервных копиях</td></tr>
+    <tr><td>Технические журналы безопасности (попытки доступа, отказы)</td><td>Защита сервиса, расследование инцидентов</td><td>Законный интерес / обязанность</td><td>180 дней</td></tr>
     <tr><td>AI-контекст диалога (текст вопроса + справка заведения)</td><td>Генерация ответа бота</td><td>Поручение Партнёра; отдельное основание определяет Партнёр</td><td>Минимально необходимый: ответ формируется в течение секунды, контекст не сохраняется поставщиком сверх его политики (см. §7)</td></tr>
-    <tr><td>Резервные копии базы</td><td>Восстановление после сбоев</td><td>Законный интерес (непрерывность сервиса)</td><td>Циклическая перезапись, <span class="todo">[срок — владелец, напр. 30 дней]</span></td></tr>
+    <tr><td>Резервные копии базы</td><td>Восстановление после сбоев</td><td>Законный интерес (непрерывность сервиса)</td><td>Циклическая перезапись, 30 дней (циклическая перезапись)</td></tr>
   </table>
 
   <h2>5. Автоматизированная обработка и ИИ</h2>
@@ -96,13 +96,13 @@
     <li><strong>Cloudflare</strong> (глобальная edge-сеть) — DNS, защита от DDoS, доставка трафика сайта и API;</li>
     <li><strong>GitHub, Inc.</strong> (США) — хостинг сайта merrabooking.me;</li>
     <li><strong>Meta Platforms, Inc.</strong> (WhatsApp Business Platform) — доставка сообщений WhatsApp; часть технических данных обрабатывает Meta по своим политикам;</li>
-    <li><strong>поставщик ИИ</strong> (<span class="todo">[OpenAI L.L.C., США — подтвердить владельцем]</span>) — генерация ответов ассистента, только при включённой функции Партнёром;</li>
-    <li><strong>инфраструктура Партнёра-оператора</strong> — база данных PostgreSQL и резервные копии размещены на серверах оператора в <span class="todo">[Казахстан — подтвердить]</span>.</li>
+    <li><strong>поставщик ИИ</strong> (OpenAI L.L.C., США) — генерация ответов ассистента, только при включённой функции Партнёром;</li>
+    <li><strong>инфраструктура Партнёра-оператора</strong> — база данных PostgreSQL и резервные копии размещены на серверах оператора в Казахстан.</li>
   </ul>
   <p>Мы не используем рекламные пиксели и стороннюю аналитику на сайте.</p>
 
   <h2>7. Международная передача</h2>
-  <p>Обработка выполняется в <span class="todo">[Казахстан]</span> и за рубежом: edge-сеть Cloudflare, GitHub (США), Meta (США/глобально), поставщик ИИ (<span class="todo">[США]</span>). Передача осуществляется механизмами, предусмотренными применимым правом (стандартные договорные условия или эквивалентные гарантии поставщиков). Запросить информацию о применяемых гарантиях: <a href="mailto:privacy@merrabooking.me">privacy@merrabooking.me</a>.</p>
+  <p>Обработка выполняется в Казахстан и за рубежом: edge-сеть Cloudflare, GitHub (США), Meta (США/глобально), поставщик ИИ (США). Передача осуществляется механизмами, предусмотренными применимым правом (стандартные договорные условия или эквивалентные гарантии поставщиков). Запросить информацию о применяемых гарантиях: <a href="mailto:privacy@merrabooking.me">privacy@merrabooking.me</a>.</p>
 
   <h2>8. Cookies и аналитика</h2>
   <p>Сайт merrabooking.me <strong>не использует cookies, localStorage и сторонние аналитические или рекламные сервисы</strong>. Согласие на cookies не требуется. Технические журналы веб-инфраструктуры ведутся для безопасности и не связываются с профилем посетителя.</p>
@@ -129,7 +129,7 @@
     <li>право не подвергаться решению, основанному исключительно на автоматизированной обработке;</li>
     <li>жалоба в надзорный орган (в Казахстане — Комитет по защите данных, <a href="https://www.gov.kz">gov.kz</a>; для ЕС — орган вашей страны).</li>
   </ul>
-  <p><strong>Куда обращаться:</strong> по данным записей, визитов и лояльности — к Партнёру (салону); по данным сайта, аккаунта Партнёра и технической обработке — на <a href="mailto:privacy@merrabooking.me">privacy@merrabooking.me</a>. Срок ответа — <span class="todo">[срок — владелец, напр. 10 рабочих дней]</span>. Мы можем запросить подтверждение личности заявителя.</p>
+  <p><strong>Куда обращаться:</strong> по данным записей, визитов и лояльности — к Партнёру (салону); по данным сайта, аккаунта Партнёра и технической обработке — на <a href="mailto:privacy@merrabooking.me">privacy@merrabooking.me</a>. Срок ответа — 10 рабочих дней. Мы можем запросить подтверждение личности заявителя.</p>
 
   <h2>12. Дети</h2>
   <p>Сервис не предназначен для прямого сбора данных детей. Запись несовершеннолетнего клиента осуществляет его законный представитель через Партнёра.</p>
@@ -142,9 +142,9 @@
 
   <div class="en">
     <h1>Privacy Policy (EN summary)</h1>
-    <p class="meta">Version 1.1 · Effective: October 11, 2026 · merrabooking.me</p>
+    <p class="meta">Version 1.2 · Effective: October 11, 2026 · merrabooking.me</p>
     <div class="card">
-      <p><strong>Operator:</strong> <span class="todo">[legal entity — filled by owner]</span>, Kazakhstan. This policy covers visitors of merrabooking.me, Partner (salon) staff accounts, and end clients of Partners who book via WhatsApp. For site visitors, partner accounts and technical logs Merra Booking is the data controller; for end-client booking, visit history and loyalty data of a salon's customers Merra Booking acts as processor on behalf of the Partner — direct such requests to the salon.</p>
+      <p><strong>Operator:</strong> the developer of Merra Booking (individual, Kazakhstan; business registration planned — policy will be updated). This policy covers visitors of merrabooking.me, Partner (salon) staff accounts, and end clients of Partners who book via WhatsApp. For site visitors, partner accounts and technical logs Merra Booking is the data controller; for end-client booking, visit history and loyalty data of a salon's customers Merra Booking acts as processor on behalf of the Partner — direct such requests to the salon.</p>
       <p><strong>Data &amp; purposes:</strong> WhatsApp number and booking messages (booking service), visit history and loyalty points (loyalty program), irreversible phone-hash of deleted clients (anti-fraud), partner account data (CRM access), security logs, AI context (response generation). Retention per the table in the Russian version above; bot dialog state expires after 24 hours.</p>
       <p><strong>Recipients:</strong> Cloudflare (edge/CDN), GitHub Inc. (site hosting), Meta Platforms (WhatsApp delivery), AI provider (OpenAI — response generation only, API data not used for model training), PostgreSQL infrastructure of the operator (Kazakhstan). No cookies, no analytics, no ad trackers on the site. Data is not sold and is not used for independent advertising.</p>
       <p><strong>AI:</strong> the assistant drafts replies only; it does not make legally significant decisions on rights, access, payment or refusal of service. Human review is available on request.</p>
