@@ -3,57 +3,147 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>О данных — Merra Booking (демонстрационный режим)</title>
+<title>Политика конфиденциальности — Merra Booking</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@400;500;600;700&family=DM+Mono&display=swap" rel="stylesheet">
 <style>
   * { margin:0; padding:0; box-sizing:border-box; }
-  :root { --bg0:#0D0D0D; --card:#1A1A1A; --line:#2A2A2A; --amber:#EF9F27; --txt:#F5F3EE; --mut:#888888;
+  :root { --bg0:#0D0D0D; --card:#1A1A1A; --line:#2A2A2A; --line2:#3a3a3a; --amber:#EF9F27; --teal:#1D9E75;
+          --txt:#F5F3EE; --mut:#888888; --dim:#555555;
           --font-display:'Bebas Neue', Impact, sans-serif; --font-body:'DM Sans', system-ui, sans-serif; --font-mono:'DM Mono', monospace; }
   @media (prefers-reduced-motion: reduce) { * { transition: none !important; } }
   body { background: var(--bg0); color: var(--txt); font-family: var(--font-body); line-height:1.7; padding:32px 20px 64px;
          background-image: radial-gradient(circle at top, rgba(239,159,39,0.08), #0D0D0D 26%); }
-  .doc { max-width: 760px; margin: 0 auto; }
+  .doc { max-width: 820px; margin: 0 auto; }
   .back { font-family: var(--font-mono); font-size: 12px; letter-spacing: 1px; text-transform: uppercase;
           color: var(--mut); text-decoration: none; display: inline-block; margin-bottom: 28px; }
   .back:hover { color: var(--amber); }
-  h1 { font-family: var(--font-display); font-weight: 400; font-size: 42px; letter-spacing: 1px; text-transform: uppercase; margin-bottom: 8px; }
-  .meta { font-family: var(--font-mono); font-size: 12px; color: var(--dim); letter-spacing: 1px; text-transform: uppercase; margin-bottom: 24px; }
-  p, li { font-size: 15px; color: #b9b9c0; }
-  ul { padding-left: 20px; margin: 10px 0; }
+  h1 { font-family: var(--font-display); font-weight: 400; font-size: 44px; letter-spacing: 1px; text-transform: uppercase; margin-bottom: 8px; }
+  .meta { font-family: var(--font-mono); font-size: 12px; color: var(--dim); letter-spacing: 1px; text-transform: uppercase; margin-bottom: 28px; }
+  h2 { font-size: 17px; font-weight: 700; margin: 34px 0 10px; color: var(--txt); }
+  p, li { font-size: 14.5px; color: #b9b9c0; }
+  ul { padding-left: 20px; margin: 8px 0; }
   .card { background: var(--card); border: 1px solid var(--line); border-radius: 12px; padding: 26px; margin: 18px 0; }
-  .card p { font-size: 14.5px; }
-  a { color: var(--amber); text-decoration: none; } a:hover { color: #FFB84D; }
-  h2 { font-size: 16px; font-weight: 700; margin: 26px 0 10px; color: var(--txt); }
+  .card p, .card li { font-size: 14.5px; }
+  a { color: var(--amber); text-decoration: none; } a:hover { color: #FFB84D; text-decoration: underline; }
+  .divider { margin: 48px 0; padding-top: 32px; border-top: 1px solid var(--line); }
+  .divider h1 { font-size: 34px; }
 </style>
 </head>
 <body>
 <div class="doc">
   <a class="back" href="/">← Merra Booking</a>
-  <h1>О данных</h1>
-  <p class="meta">Демонстрационный режим · Обновлено: 11 октября 2026 · merrabooking.me</p>
+  <h1>Политика конфиденциальности</h1>
+  <p class="meta">Дата вступления в силу: 11 октября 2026 года · Последнее обновление: 11 октября 2026 года · merrabooking.me</p>
 
+  <h2>1. Оператор и статус проекта</h2>
+  <p>Оператором обработки данных демонстрационного проекта Merra Booking является <strong style="color:var(--txt)">Рамазанов Адиль Даниярович</strong>, физическое лицо, осуществляющее разработку проекта в Республике Казахстан.</p>
+  <p>Город: Костанай, Республика Казахстан.</p>
+  <p>Контакт по вопросам обработки данных: <a href="mailto:privacy@merrabooking.me">privacy@merrabooking.me</a>.</p>
   <div class="card">
-    <p>Сайт находится на <strong style="color:var(--txt)">стадии демонстрации</strong>. Формы регистрации, обратной связи и подключения партнёров отключены; сайт не предназначен для передачи персональных данных и не использует cookies, аналитику или рекламные сервисы.</p>
+    <p>Merra Booking — независимый pre-launch/demo-проект. Разработчик — физическое лицо; регистрация ИП/ТОО пока отсутствует. Сайт не является полноценным коммерческим SaaS-сервисом: формы регистрации, подключения партнёров и оплаты отключены. Демонстрационный бот не предназначен для реальных клиентских, медицинских, платёжных или иных чувствительных данных. До включения соответствующих функций информация об операторе, поставщиках и способах обработки будет обновлена.</p>
   </div>
 
-  <h2>Демонстрационный WhatsApp-бот</h2>
-  <p>Для показа работы продукта подключён демонстрационный WhatsApp-номер. Сообщения, отправленные на этот номер, обрабатываются демонстрационным программным обеспечением только в целях показа сценария записи: выбор услуги, дата, время, подтверждение. Полный текст диалога хранится ограниченное время и удаляется по запросу.</p>
+  <h2>2. Какие данные обрабатываются</h2>
+  <h2 style="font-size:15px; color:var(--mut); margin-top:14px">Сайт merrabooking.me</h2>
   <ul>
-    <li>бот не рассылает маркетинговые сообщения;</li>
-    <li>запросить удаление своего диалога: <a href="mailto:privacy@merrabooking.me">privacy@merrabooking.me</a>;</li>
-    <li>технические журналы инфраструктуры (Cloudflare, хостинг) ведутся в минимальном объёме для безопасности и стабильности.</li>
+    <li>технические данные, необходимые для безопасности и работы сайта;</li>
+    <li>данные, которые пользователь добровольно отправляет по email.</li>
+  </ul>
+  <p>Аналитика, рекламные пиксели и сторонние трекеры не используются.</p>
+  <h2 style="font-size:15px; color:var(--mut); margin-top:20px">Демонстрационный WhatsApp-бот</h2>
+  <ul>
+    <li>номер WhatsApp;</li>
+    <li>имя профиля, если оно передаётся WhatsApp;</li>
+    <li>текст сообщений;</li>
+    <li>выбранная услуга, дата и время демонстрационной записи;</li>
+    <li>технические метаданные и журналы безопасности в минимальном объёме.</li>
   </ul>
 
-  <h2>Полная политика</h2>
-  <p>Полноценная политика конфиденциальности будет опубликована на этой странице до запуска реальных функций — подключения партнёров, приёма записей реальных клиентов и включения интеграций. Черновик полной политики доступен по запросу на тот же адрес.</p>
+  <h2>3. Цели обработки</h2>
+  <ul>
+    <li>демонстрация сценария записи;</li>
+    <li>ответы на сообщения;</li>
+    <li>тестирование WhatsApp-интеграции;</li>
+    <li>техническая поддержка;</li>
+    <li>защита от спама, злоупотреблений и атак;</li>
+    <li>обработка запросов на удаление данных.</li>
+  </ul>
+  <p>Данные не используются для рекламы, продажи баз или маркетинговых рассылок.</p>
 
-  <h2>Контакты</h2>
-  <p>Вопросы о данных: <a href="mailto:privacy@merrabooking.me">privacy@merrabooking.me</a></p>
+  <h2>4. Хранение</h2>
+  <p>Диалоги с демонстрационным WhatsApp-ботом хранятся ограниченное время и удаляются по запросу (см. страницу <a href="/data-deletion/">удаления данных</a>). Технические журналы могут храниться ограниченный срок, необходимый для защиты сервиса и расследования инцидентов.</p>
 
-  <div class="card" style="margin-top:36px">
-    <p style="font-size:13.5px"><strong style="color:var(--txt)">Privacy notice (EN).</strong> This site is a pre-launch demonstration. No registration forms, no cookies, no analytics. A demo WhatsApp number is connected: messages sent to it are processed by the demo software solely to demonstrate the booking flow; dialogues are stored for a limited time and deleted on request at <a href="mailto:privacy@merrabooking.me">privacy@merrabooking.me</a>. The full privacy policy will be published on this page before any production features are enabled.</p>
+  <h2>5. Получатели и внешние сервисы</h2>
+  <ul>
+    <li><strong>Meta / WhatsApp</strong> — передача и доставка сообщений; часть технических данных обрабатывает Meta по своим условиям;</li>
+    <li><strong>Cloudflare</strong> — DNS, проксирование, защита и технические журналы;</li>
+    <li><strong>GitHub Pages (GitHub, Inc., США)</strong> — хостинг статических страниц сайта;</li>
+    <li><strong>AI-провайдер (OpenAI)</strong> — только если включена функция ИИ-ответов (по умолчанию отключена): передаются текст диалога и справочные данные заведения, необходимые для ответа; номер телефона не передаётся; данные не используются для обучения моделей согласно условиям API-сервиса; функция может быть отключена Партнёром в любой момент.</li>
+  </ul>
+  <p>База данных демонстрационного контура размещена на инфраструктуре оператора в Казахстане.</p>
+
+  <h2>6. Передача данных</h2>
+  <p>Внешние поставщики могут обрабатывать данные на инфраструктуре за пределами Казахстана (США и глобальная edge-сеть), поскольку это фактически определяется расположением их инфраструктуры.</p>
+
+  <h2>7. Права пользователя</h2>
+  <ul>
+    <li>запросить сведения об обработке данных;</li>
+    <li>попросить исправить данные;</li>
+    <li><a href="/data-deletion/">запросить удаление demo-диалога</a>;</li>
+    <li>прекратить дальнейшее взаимодействие с ботом;</li>
+    <li>направить обращение на <a href="mailto:privacy@merrabooking.me">privacy@merrabooking.me</a>.</li>
+  </ul>
+  <p>Для защиты от запросов посторонних лиц может потребоваться подтверждение принадлежности номера или диалога.</p>
+
+  <h2>8. Изменения</h2>
+  <p>Политика может изменяться; новая версия публикуется на этой странице. Дата вступления в силу — 11 октября 2026 года, последнее обновление — 11 октября 2026 года.</p>
+
+  <div class="divider">
+    <h1>Privacy Policy</h1>
+    <p class="meta">Effective date: October 11, 2026 · Last updated: October 11, 2026 · merrabooking.me</p>
+
+    <h2>1. Operator and project status</h2>
+    <p>The operator of the Merra Booking demonstration project is <strong style="color:var(--txt)">Ramazanov Adil Daniyarovich</strong>, an individual developing the project in the Republic of Kazakhstan. City: Kostanay, Republic of Kazakhstan. Data-protection contact: <a href="mailto:privacy@merrabooking.me">privacy@merrabooking.me</a>.</p>
+    <div class="card">
+      <p>Merra Booking is an independent pre-launch/demo project. The developer is an individual; no sole-proprietor or company registration exists yet. The site is not a full commercial SaaS service: registration, partner onboarding and payment forms are disabled. The demo bot is not intended for real client, medical, payment or other sensitive data. Operator, subprocessor and processing details will be updated before any such features are enabled.</p>
+    </div>
+
+    <h2>2. Data processed</h2>
+    <p><em>Website:</em> technical data required for security and operation; data the user voluntarily sends by email. No analytics, ad pixels or third-party trackers are used.</p>
+    <p><em>Demo WhatsApp bot:</em> WhatsApp number; profile name if provided by WhatsApp; message text; selected service, date and time of the demonstration booking; minimal technical metadata and security logs.</p>
+
+    <h2>3. Purposes</h2>
+    <p>Demonstration of the booking flow, replying to messages, testing the WhatsApp integration, technical support, protection against spam and abuse, and handling deletion requests. Data is not used for advertising, database sales or marketing campaigns.</p>
+
+    <h2>4. Storage</h2>
+    <p>Demo bot dialogues are stored for a limited time and deleted on request (see the <a href="/data-deletion/">data deletion page</a>). Technical logs may be kept for a limited period required to protect the service and investigate incidents.</p>
+
+    <h2>5. Recipients and external services</h2>
+    <ul>
+      <li><strong>Meta / WhatsApp</strong> — message delivery; some technical data is processed by Meta under its own terms;</li>
+      <li><strong>Cloudflare</strong> — DNS, proxying, protection and technical logs;</li>
+      <li><strong>GitHub Pages (GitHub, Inc., USA)</strong> — hosting of the static site pages;</li>
+      <li><strong>AI provider (OpenAI)</strong> — only if the AI-replies feature is enabled (off by default): the dialog text and venue reference data needed for the reply are sent; the phone number is not sent; data is not used for model training per the API service terms; the Partner can disable the feature at any time.</li>
+    </ul>
+    <p>The demo database is hosted on operator infrastructure in Kazakhstan.</p>
+
+    <h2>6. Data transfers</h2>
+    <p>External providers may process data on infrastructure located outside Kazakhstan (USA and the global edge network), as determined by the actual location of their infrastructure.</p>
+
+    <h2>7. User rights</h2>
+    <ul>
+      <li>request information about data processing;</li>
+      <li>request correction;</li>
+      <li><a href="/data-deletion/">request deletion of a demo dialogue</a>;</li>
+      <li>stop further interaction with the bot;</li>
+      <li>contact <a href="mailto:privacy@merrabooking.me">privacy@merrabooking.me</a>.</li>
+    </ul>
+    <p>To protect against third-party requests, proof of ownership of the number or dialogue may be required.</p>
+
+    <h2>8. Changes</h2>
+    <p>This policy may change; new versions are published on this page. Effective date: October 11, 2026; last updated: October 11, 2026.</p>
   </div>
 </div>
 </body>

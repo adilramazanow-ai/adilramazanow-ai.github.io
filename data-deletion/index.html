@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Удаление данных — Merra Booking</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@400;500;600;700&family=DM+Mono&display=swap" rel="stylesheet">
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  :root { --bg0:#0D0D0D; --card:#1A1A1A; --line:#2A2A2A; --amber:#EF9F27; --txt:#F5F3EE; --mut:#888888;
+          --font-display:'Bebas Neue', Impact, sans-serif; --font-body:'DM Sans', system-ui, sans-serif; --font-mono:'DM Mono', monospace; }
+  @media (prefers-reduced-motion: reduce) { * { transition: none !important; } }
+  body { background: var(--bg0); color: var(--txt); font-family: var(--font-body); line-height:1.7; padding:32px 20px 64px;
+         background-image: radial-gradient(circle at top, rgba(239,159,39,0.08), #0D0D0D 26%); }
+  .doc { max-width: 760px; margin: 0 auto; }
+  .back { font-family: var(--font-mono); font-size: 12px; letter-spacing: 1px; text-transform: uppercase;
+          color: var(--mut); text-decoration: none; display: inline-block; margin-bottom: 28px; }
+  .back:hover { color: var(--amber); }
+  h1 { font-family: var(--font-display); font-weight: 400; font-size: 42px; letter-spacing: 1px; text-transform: uppercase; margin-bottom: 8px; }
+  .meta { font-family: var(--font-mono); font-size: 12px; color: var(--dim); letter-spacing: 1px; text-transform: uppercase; margin-bottom: 24px; }
+  h2 { font-size: 16px; font-weight: 700; margin: 26px 0 10px; color: var(--txt); }
+  p, li { font-size: 15px; color: #b9b9c0; }
+  ul { padding-left: 20px; margin: 10px 0; }
+  .card { background: var(--card); border: 1px solid var(--line); border-radius: 12px; padding: 26px; margin: 18px 0; }
+  a { color: var(--amber); text-decoration: none; } a:hover { color: #FFB84D; }
+  code { font-family: var(--font-mono); font-size: 13px; background:#232323; border:1px solid var(--line); border-radius:4px; padding:1px 7px; color:#d9d9dc; }
+</style>
+</head>
+<body>
+<div class="doc">
+  <a class="back" href="/">← Merra Booking</a>
+  <h1>Удаление данных</h1>
+  <p class="meta">Data Deletion Instructions · Обновлено: 11 октября 2026</p>
+
+  <h2>Как запросить удаление</h2>
+  <p>Направьте запрос на <a href="mailto:privacy@merrabooking.me">privacy@merrabooking.me</a> с темы «Удаление данных».</p>
+
+  <h2>Какие данные можно удалить</h2>
+  <ul>
+    <li>текст диалога с демонстрационным WhatsApp-ботом;</li>
+    <li>номер WhatsApp, связанный с диалогом;</li>
+    <li>выбранные услуги, даты и время демонстрационных записей;</li>
+    <li>данные, добровольно отправленные по email.</li>
+  </ul>
+
+  <h2>Что приложить к запросу</h2>
+  <ul>
+    <li>номер WhatsApp, с которого велся диалог (или скриншот переписки);</li>
+    <li>примерную дату и время общения с ботом;</li>
+    <li>для запросов по email — сам адрес отправки.</li>
+  </ul>
+  <p>Для защиты от запросов посторонних лиц мы можем попросить подтвердить принадлежность номера: отправить с этого номера любое сообщение демо-боту перед выполнением удаления.</p>
+
+  <h2>Сроки удаления</h2>
+  <p>Удаление выполняется в течение <strong style="color:var(--txt)">10 рабочих дней</strong> с момента подтверждения принадлежности данных. Мы сообщим о выполнении ответным письмом.</p>
+
+  <h2>Технические журналы</h2>
+  <p>Минимальные технические журналы безопасности (без текстов сообщений) могут сохраняться ограниченное время — это необходимо для защиты сервиса от злоупотреблений и атак.</p>
+
+  <h2>Полная политика</h2>
+  <p>Подробности — в <a href="/privacy.html">Политике конфиденциальности</a>.</p>
+
+  <div class="card">
+    <p style="font-size:13.5px"><strong style="color:var(--txt)">Data deletion (EN).</strong> To delete your demo bot dialogue, email <a href="mailto:privacy@merrabooking.me">privacy@merrabooking.me</a> with subject "Data deletion": include your WhatsApp number, the approximate date/time of the conversation, or a screenshot of the chat. Deletion is completed within 10 business days after ownership is confirmed (we may ask you to send any message to the demo bot from that number). Minimal security logs without message texts may be retained for a limited period. See the <a href="/privacy.html">Privacy Policy</a>.</p>
+  </div>
+</div>
+</body>
+</html>
