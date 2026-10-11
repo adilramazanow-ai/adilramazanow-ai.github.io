@@ -1,1 +1,0 @@
-# adilramazanow-ai.github.io
