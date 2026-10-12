@@ -3,20 +3,20 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Merra Booking — AI CRM для сервисного бизнеса</title>
-<meta name="description" content="Merra Booking — pre-launch CRM для салонов красоты, барбершопов и студий: WhatsApp-запись, лояльность, склад и Control Panel.">
+<title>Merra Booking — запись клиентов через WhatsApp</title>
+<meta name="description" content="Merra Booking — проект системы записи клиентов через WhatsApp для салонов, барбершопов и студий.">
 <meta name="robots" content="index, follow">
 <meta name="theme-color" content="#0D0D0D">
 <link rel="canonical" href="https://merrabooking.me/">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Merra Booking">
-<meta property="og:title" content="Merra Booking — AI CRM для сервисного бизнеса">
-<meta property="og:description" content="Запись через WhatsApp, лояльность, склад и Control Panel в одном контуре.">
+<meta property="og:title" content="Merra Booking — запись клиентов через WhatsApp">
+<meta property="og:description" content="Проект системы записи для салонов, барбершопов и студий.">
 <meta property="og:url" content="https://merrabooking.me/">
 <meta property="og:locale" content="ru_RU">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Merra Booking — AI CRM для сервисного бизнеса">
-<meta name="twitter:description" content="Pre-launch CRM для сервисного бизнеса.">
+<meta name="twitter:title" content="Merra Booking — запись клиентов через WhatsApp">
+<meta name="twitter:description" content="Проект системы записи для сервисного бизнеса.">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%230D0D0D'/%3E%3Ctext x='16' y='23' font-size='17' text-anchor='middle' fill='%23EF9F27' font-family='Arial Black'%3EM%3C/text%3E%3C/svg%3E">
 <style>
   @font-face { font-family:'Bebas Neue'; src:url('assets/fonts/bebas-neue.ttf') format('truetype'); font-weight:400; font-display:swap; }
@@ -25,233 +25,123 @@
   @font-face { font-family:'DM Sans'; src:url('assets/fonts/dm-sans-600.ttf') format('truetype'); font-weight:600; font-display:swap; }
   @font-face { font-family:'DM Sans'; src:url('assets/fonts/dm-sans-700.ttf') format('truetype'); font-weight:700; font-display:swap; }
   @font-face { font-family:'DM Mono'; src:url('assets/fonts/dm-mono-400.ttf') format('truetype'); font-weight:400; font-display:swap; }
-  @font-face { font-family:'DM Mono'; src:url('assets/fonts/dm-mono-500.ttf') format('truetype'); font-weight:500; font-display:swap; }
   * { margin:0; padding:0; box-sizing:border-box; }
-  :root { --bg:#0D0D0D; --surface:#141414; --card:#1A1A1A; --line:#2A2A2A; --line2:#444;
-    --amber:#EF9F27; --amber-l:#FFB84D; --teal:#1D9E75; --txt:#F5F3EE; --mut:#B1B0B0; --dim:#777;
-    --display:'Bebas Neue', Impact, sans-serif; --body:'DM Sans', system-ui, sans-serif; --mono:'DM Mono', monospace; }
+  :root { --bg:#0D0D0D; --surface:#141414; --card:#1A1A1A; --line:#2A2A2A; --line2:#444; --amber:#EF9F27; --amber-l:#FFB84D; --teal:#1D9E75; --txt:#F5F3EE; --mut:#B9B8B8; --dim:#777; --display:'Bebas Neue',Impact,sans-serif; --body:'DM Sans',system-ui,sans-serif; --mono:'DM Mono',monospace; }
   html { scroll-behavior:smooth; scroll-padding-top:88px; }
-  @media (prefers-reduced-motion:reduce) { html { scroll-behavior:auto; } *, *::before, *::after { transition-duration:.01ms !important; animation-duration:.01ms !important; animation-iteration-count:1 !important; } }
+  @media (prefers-reduced-motion:reduce) { html { scroll-behavior:auto; } *,*::before,*::after { transition-duration:.01ms !important; animation-duration:.01ms !important; } }
   body { background:var(--bg); color:var(--txt); font-family:var(--body); line-height:1.6; overflow-x:hidden; }
-  a { color:inherit; text-decoration:none; }
-  a:focus-visible, button:focus-visible { outline:3px solid var(--amber-l); outline-offset:4px; border-radius:5px; }
-  .skip-link { position:absolute; left:16px; top:-60px; z-index:100; padding:12px 16px; background:var(--amber); color:var(--bg); font-weight:700; }
-  .skip-link:focus { top:16px; }
-  .glow { position:fixed; inset:0; pointer-events:none; z-index:-1; background:radial-gradient(circle at top, rgba(239,159,39,.12), var(--bg) 30%); }
+  a { color:inherit; text-decoration:none; } a:focus-visible,button:focus-visible { outline:3px solid var(--amber-l); outline-offset:4px; border-radius:5px; }
+  .skip-link { position:absolute; left:16px; top:-60px; z-index:100; padding:12px 16px; background:var(--amber); color:var(--bg); font-weight:700; } .skip-link:focus { top:16px; }
+  .glow { position:fixed; inset:0; pointer-events:none; z-index:-1; background:radial-gradient(circle at top,rgba(239,159,39,.12),var(--bg) 30%); }
   .wrap { max-width:1180px; margin:0 auto; padding:0 24px; }
-  header { position:sticky; top:0; z-index:50; background:rgba(13,13,13,.9); backdrop-filter:blur(14px); border-bottom:1px solid var(--line); }
-  .nav { min-height:72px; display:flex; align-items:center; justify-content:space-between; gap:20px; }
-  .logo { font-family:var(--display); font-size:26px; letter-spacing:1px; text-transform:uppercase; white-space:nowrap; }
-  .logo b { color:var(--amber); font-weight:400; }
-  .nav-links { display:flex; align-items:center; gap:26px; }
-  .nav-links a { color:var(--mut); font-size:14px; }
-  .nav-links a:hover { color:var(--txt); }
+  header { position:sticky; top:0; z-index:50; background:rgba(13,13,13,.92); backdrop-filter:blur(14px); border-bottom:1px solid var(--line); }
+  .nav { min-height:72px; display:flex; align-items:center; justify-content:space-between; gap:20px; } .logo { font-family:var(--display); font-size:26px; letter-spacing:1px; text-transform:uppercase; white-space:nowrap; } .logo b { color:var(--amber); font-weight:400; }
+  .nav-links { display:flex; align-items:center; gap:25px; } .nav-links a { color:var(--mut); font-size:14px; } .nav-links a:hover { color:var(--txt); }
   .menu-toggle { display:none; min-width:44px; min-height:44px; padding:8px; border:1px solid var(--line2); border-radius:8px; background:transparent; color:var(--txt); cursor:pointer; font-size:21px; }
-  .pill { display:inline-flex; align-items:center; justify-content:center; min-height:44px; padding:10px 20px; border:1px solid transparent; border-radius:999px; background:var(--amber); color:var(--bg); font-size:14px; font-weight:700; cursor:pointer; transition:transform .15s, background .15s, box-shadow .2s; }
-  .pill:hover { background:var(--amber-l); transform:translateY(-1px); box-shadow:0 5px 16px rgba(239,159,39,.3); }
-  .pill.ghost { background:transparent; border-color:var(--line2); color:var(--txt); }
-  .pill.ghost:hover { border-color:var(--amber); color:var(--amber-l); box-shadow:none; }
-  .hero { display:grid; grid-template-columns:1.05fr .95fr; gap:58px; align-items:center; padding:92px 0 64px; }
-  .kicker, .tag, .status-label, .meta { font-family:var(--mono); font-size:11px; letter-spacing:2px; text-transform:uppercase; }
-  .kicker { color:var(--amber); margin-bottom:20px; }
-  h1, h2, h3 { font-family:var(--display); font-weight:400; text-transform:uppercase; letter-spacing:1px; line-height:1; }
-  h1 { font-size:clamp(56px, 8vw, 104px); }
-  h1 em { color:var(--amber); font-style:normal; }
-  .lead { max-width:560px; margin-top:24px; color:var(--mut); font-size:18px; }
-  .ctas { display:flex; flex-wrap:wrap; gap:12px; margin-top:32px; }
-  .mono-note { margin-top:22px; color:var(--dim); font-family:var(--mono); font-size:12px; letter-spacing:1px; text-transform:uppercase; }
-  .mono-note i { color:var(--teal); font-style:normal; }
-  .hero-visual { background:var(--card); border:1px solid var(--line); border-radius:14px; padding:20px; transform:rotate(1.2deg); }
-  .hero-visual:hover { transform:rotate(0); transition:transform .25s; }
-  .chat { display:flex; flex-direction:column; gap:10px; }
-  .msg { max-width:84%; padding:10px 14px; border-radius:12px; font-size:13px; line-height:1.45; }
-  .msg.bot { align-self:flex-start; background:#232323; border:1px solid var(--line); color:#dedee1; }
-  .msg.usr { align-self:flex-end; background:rgba(239,159,39,.14); border:1px solid rgba(239,159,39,.35); }
-  .msg .btns { display:flex; flex-wrap:wrap; gap:8px; margin-top:10px; }
-  .msg .btns b { padding:6px 12px; border:1px solid rgba(239,159,39,.5); border-radius:999px; color:var(--amber-l); font-family:var(--mono); font-size:11px; font-weight:500; }
-  .msg .tick { margin-top:6px; color:var(--teal); font-family:var(--mono); font-size:10px; letter-spacing:1px; text-transform:uppercase; }
-  .status { display:flex; align-items:flex-start; gap:14px; margin:0 0 18px; padding:16px 18px; border:1px solid rgba(29,158,117,.45); border-radius:10px; background:rgba(29,158,117,.08); }
-  .status-dot { flex:0 0 10px; width:10px; height:10px; margin-top:6px; border-radius:50%; background:var(--teal); box-shadow:0 0 0 5px rgba(29,158,117,.12); }
-  .status strong { display:block; margin-bottom:3px; font-size:15px; }
-  .status p { color:var(--mut); font-size:14px; }
-  section { padding:68px 0; }
-  .sec-head .kicker { display:block; color:var(--dim); margin-bottom:14px; }
-  h2 { font-size:clamp(38px, 5vw, 60px); }
-  .sec-head p { max-width:620px; margin-top:14px; color:var(--mut); }
-  .problem-grid, .bento { display:grid; gap:16px; margin-top:34px; }
-  .problem-grid { grid-template-columns:repeat(3,1fr); }
-  .problem, .bcard, .flow-card, .about-card { padding:24px; border:1px solid var(--line); border-radius:12px; background:var(--card); }
-  .problem { border-top:3px solid var(--amber); }
-  .problem h3, .bcard h3 { margin:12px 0 9px; font-size:25px; }
-  .problem p, .bcard p, .flow-card p, .about-card p { color:var(--mut); font-size:14px; }
-  .problem .tag, .bcard .tag { color:var(--amber); }
-  .flow { display:grid; grid-template-columns:repeat(3,1fr); gap:16px; margin-top:34px; }
-  .flow-card { position:relative; }
-  .flow-card:not(:last-child)::after { content:'→'; position:absolute; right:-18px; top:50%; color:var(--amber); font-size:24px; }
-  .flow-card .num { color:var(--amber); font-family:var(--display); font-size:42px; }
-  .flow-card h3 { margin:8px 0; font-size:24px; }
-  .bento { grid-template-columns:repeat(6,1fr); }
-  .bcard.wide { grid-column:span 4; } .bcard.small { grid-column:span 2; } .bcard.half { grid-column:span 3; }
-  .bcard .stat { display:block; margin-top:18px; color:var(--teal); font-family:var(--mono); font-size:11px; letter-spacing:1px; text-transform:uppercase; }
-  .steps { margin-top:34px; border-top:1px solid var(--line); }
-  .step { display:grid; grid-template-columns:80px 1fr; gap:22px; padding:24px 0; border-bottom:1px solid var(--line); }
-  .step .num { color:var(--amber); font-family:var(--display); font-size:40px; }
-  .step h3 { margin:4px 0 7px; font-family:var(--body); font-size:17px; font-weight:700; text-transform:none; letter-spacing:0; }
-  .step p { max-width:700px; color:var(--mut); font-size:14px; }
-  .about { display:grid; grid-template-columns:1fr 1fr; gap:16px; margin-top:34px; }
-  .about-card h3 { margin-bottom:10px; font-size:28px; }
-  .band { display:flex; align-items:center; justify-content:space-between; gap:24px; flex-wrap:wrap; margin:40px 0 80px; padding:42px; border:1px solid var(--line); border-radius:12px; background:linear-gradient(180deg,#1e1e1c,var(--card)); }
-  .band h2 { font-size:clamp(32px,4vw,48px); }
-  .band p { margin-top:10px; color:var(--mut); }
-  footer { padding:48px 0; border-top:1px solid var(--line); background:var(--surface); }
-  .cols { display:grid; grid-template-columns:2fr 1fr 1fr; gap:32px; }
-  .cols .lbl { display:block; margin-bottom:12px; color:var(--dim); font-family:var(--mono); font-size:11px; letter-spacing:2px; text-transform:uppercase; }
-  .cols a, .cols p { display:block; margin-bottom:8px; color:var(--mut); font-size:14px; }
-  .cols a:hover { color:var(--txt); }
-  .foot-note { display:flex; justify-content:space-between; flex-wrap:wrap; gap:12px; margin-top:38px; padding-top:20px; border-top:1px solid var(--line); color:var(--dim); font-family:var(--mono); font-size:12px; }
-  @media (max-width:900px) {
-    .hero { grid-template-columns:1fr; padding:62px 0 48px; }
-    .hero-visual { transform:none; }
-    .problem-grid, .flow, .about { grid-template-columns:1fr; }
-    .flow-card:not(:last-child)::after { content:'↓'; right:auto; top:auto; bottom:-22px; left:50%; }
-    .bento { grid-template-columns:1fr; } .bcard.wide, .bcard.small, .bcard.half { grid-column:span 1; }
-    .menu-toggle { display:block; }
-    .nav-links { display:none; position:absolute; left:16px; right:16px; top:68px; flex-direction:column; align-items:stretch; gap:0; padding:8px; border:1px solid var(--line); border-radius:10px; background:#171717; box-shadow:0 12px 30px rgba(0,0,0,.35); }
-    .nav-links[data-open="true"] { display:flex; }
-    .nav-links a { padding:13px 12px; border-radius:6px; }
-    .nav-links a:hover { background:#232323; }
-    .nav > .pill { display:none; }
-    .cols { grid-template-columns:1fr; }
-  }
-  @media (max-width:560px) {
-    .wrap { padding:0 18px; } .hero h1 { font-size:56px; } .lead { font-size:16px; }
-    .ctas .pill, .band .pill { width:100%; } .band { padding:28px 22px; margin-bottom:52px; }
-    .step { grid-template-columns:54px 1fr; gap:14px; } .step .num { font-size:34px; }
-  }
+  .pill { display:inline-flex; align-items:center; justify-content:center; min-height:44px; padding:10px 20px; border:1px solid transparent; border-radius:999px; background:var(--amber); color:var(--bg); font-size:14px; font-weight:700; cursor:pointer; transition:transform .15s,background .15s,box-shadow .2s; } .pill:hover { background:var(--amber-l); transform:translateY(-1px); box-shadow:0 5px 16px rgba(239,159,39,.3); } .pill.ghost { background:transparent; border-color:var(--line2); color:var(--txt); } .pill.ghost:hover { border-color:var(--amber); color:var(--amber-l); box-shadow:none; }
+  .hero { display:grid; grid-template-columns:1.05fr .95fr; gap:58px; align-items:center; padding:92px 0 58px; } .kicker,.tag,.meta { font-family:var(--mono); font-size:11px; letter-spacing:2px; text-transform:uppercase; } .kicker { color:var(--amber); margin-bottom:20px; }
+  h1,h2,h3 { font-family:var(--display); font-weight:400; text-transform:uppercase; letter-spacing:1px; line-height:1; } h1 { font-size:clamp(55px,8vw,100px); } h1 em { color:var(--amber); font-style:normal; } h2 { font-size:clamp(38px,5vw,60px); }
+  .lead { max-width:570px; margin-top:24px; color:var(--mut); font-size:18px; } .ctas { display:flex; flex-wrap:wrap; gap:12px; margin-top:32px; } .mono-note { margin-top:22px; color:var(--dim); font-family:var(--mono); font-size:12px; letter-spacing:1px; text-transform:uppercase; } .mono-note i { color:var(--teal); font-style:normal; }
+  .hero-visual { background:var(--card); border:1px solid var(--line); border-radius:14px; padding:20px; transform:rotate(1.2deg); } .chat { display:flex; flex-direction:column; gap:10px; } .msg { max-width:84%; padding:10px 14px; border-radius:12px; font-size:13px; line-height:1.45; } .msg.bot { align-self:flex-start; background:#232323; border:1px solid var(--line); color:#dedee1; } .msg.usr { align-self:flex-end; background:rgba(239,159,39,.14); border:1px solid rgba(239,159,39,.35); } .msg .btns { display:flex; flex-wrap:wrap; gap:8px; margin-top:10px; } .msg .btns b { padding:6px 12px; border:1px solid rgba(239,159,39,.5); border-radius:999px; color:var(--amber-l); font-family:var(--mono); font-size:11px; font-weight:500; }
+  .early { display:inline-flex; align-items:center; gap:10px; margin:0 0 24px; padding:11px 14px; border:1px solid rgba(29,158,117,.45); border-radius:8px; background:rgba(29,158,117,.08); color:#d4eee5; font-size:14px; } .early::before { content:'●'; color:var(--teal); }
+  section { padding:68px 0; } .sec-head .kicker { display:block; color:var(--dim); margin-bottom:14px; } .sec-head p { max-width:650px; margin-top:14px; color:var(--mut); }
+  .pain-grid,.feature-grid,.compare-grid,.about-grid { display:grid; gap:16px; margin-top:34px; } .pain-grid { grid-template-columns:repeat(4,1fr); } .feature-grid { grid-template-columns:repeat(2,1fr); } .compare-grid,.about-grid { grid-template-columns:repeat(2,1fr); }
+  .card { padding:24px; border:1px solid var(--line); border-radius:12px; background:var(--card); } .card h3 { margin:12px 0 9px; font-size:25px; } .card p { color:var(--mut); font-size:14px; } .tag { color:var(--amber); }
+  .steps { margin-top:34px; border-top:1px solid var(--line); } .step { display:grid; grid-template-columns:70px 1fr; gap:20px; padding:24px 0; border-bottom:1px solid var(--line); } .step .num { color:var(--amber); font-family:var(--display); font-size:40px; } .step h3 { margin:4px 0 7px; font-family:var(--body); font-size:17px; font-weight:700; text-transform:none; letter-spacing:0; } .step p { color:var(--mut); font-size:14px; }
+  .faq { margin-top:34px; border-top:1px solid var(--line); } details { padding:20px 0; border-bottom:1px solid var(--line); } summary { cursor:pointer; list-style:none; font-size:16px; font-weight:700; } summary::-webkit-details-marker { display:none; } summary::after { content:'+'; float:right; color:var(--amber); font-size:22px; font-weight:400; } details[open] summary::after { content:'−'; } details p { max-width:760px; margin-top:10px; color:var(--mut); font-size:14px; }
+  .band { display:flex; align-items:center; justify-content:space-between; gap:24px; flex-wrap:wrap; margin:40px 0 80px; padding:42px; border:1px solid var(--line); border-radius:12px; background:linear-gradient(180deg,#1e1e1c,var(--card)); } .band h2 { font-size:clamp(32px,4vw,48px); } .band p { margin-top:10px; color:var(--mut); }
+  footer { padding:48px 0; border-top:1px solid var(--line); background:var(--surface); } .cols { display:grid; grid-template-columns:2fr 1fr 1fr; gap:32px; } .cols .lbl { display:block; margin-bottom:12px; color:var(--dim); font-family:var(--mono); font-size:11px; letter-spacing:2px; text-transform:uppercase; } .cols a,.cols p { display:block; margin-bottom:8px; color:var(--mut); font-size:14px; } .cols a:hover { color:var(--txt); } .foot-note { display:flex; justify-content:space-between; flex-wrap:wrap; gap:12px; margin-top:38px; padding-top:20px; border-top:1px solid var(--line); color:var(--dim); font-family:var(--mono); font-size:12px; }
+  @media (max-width:1000px) { .pain-grid { grid-template-columns:repeat(2,1fr); } }
+  @media (max-width:900px) { .hero { grid-template-columns:1fr; padding:62px 0 48px; } .hero-visual { transform:none; } .menu-toggle { display:block; } .nav-links { display:none; position:absolute; left:16px; right:16px; top:68px; flex-direction:column; align-items:stretch; gap:0; padding:8px; border:1px solid var(--line); border-radius:10px; background:#171717; } .nav-links[data-open="true"] { display:flex; } .nav-links a { padding:13px 12px; border-radius:6px; } .nav-links a:hover { background:#232323; } .nav>.pill { display:none; } .cols { grid-template-columns:1fr; } }
+  @media (max-width:650px) { .wrap { padding:0 18px; } .hero h1 { font-size:55px; } .lead { font-size:16px; } .pain-grid,.feature-grid,.compare-grid,.about-grid { grid-template-columns:1fr; } .ctas .pill,.band .pill { width:100%; } .band { padding:28px 22px; margin-bottom:52px; } .step { grid-template-columns:52px 1fr; gap:14px; } }
 </style>
 </head>
 <body>
 <a class="skip-link" href="#main">Перейти к содержанию</a>
 <div class="glow"></div>
-<header>
-  <div class="wrap nav">
-    <a class="logo" href="/" aria-label="Merra Booking — на главную">Merra<b>·</b>Booking</a>
-    <button class="menu-toggle" type="button" aria-label="Открыть меню" aria-controls="main-nav" aria-expanded="false">☰</button>
-    <nav id="main-nav" class="nav-links" aria-label="Основная навигация" data-open="false">
-      <a href="#product">Продукт</a>
-      <a href="#how">Как это работает</a>
-      <a href="#about">О проекте</a>
-      <a href="privacy.html">Privacy</a>
-    </nav>
-    <a class="pill" href="https://wa.me/77751934260">Открыть демо</a>
-  </div>
-</header>
+<header><div class="wrap nav">
+  <a class="logo" href="/" aria-label="Merra Booking — на главную">Merra<b>·</b>Booking</a>
+  <button class="menu-toggle" type="button" aria-label="Открыть меню" aria-controls="main-nav" aria-expanded="false">☰</button>
+  <nav id="main-nav" class="nav-links" aria-label="Основная навигация" data-open="false">
+    <a href="#how">Как это работает</a><a href="#features">Что умеет</a><a href="#faq">Вопросы</a><a href="#about">Обо мне</a>
+  </nav>
+  <a class="pill" href="https://wa.me/77751934260">Написать мне</a>
+</div></header>
 
-<main id="main">
-  <div class="wrap">
-    <section class="hero" aria-labelledby="hero-title">
-      <div>
-        <span class="kicker">AI CRM · WhatsApp · сервисный бизнес</span>
-        <h1 id="hero-title">Меньше ручной работы.<br><em>Больше записей.</em></h1>
-        <p class="lead">Merra Booking помогает салонам, барбершопам и студиям собирать записи в WhatsApp, держать персонал в одном Control Panel и возвращать клиентов через лояльность.</p>
-        <div class="ctas">
-          <a class="pill" href="https://wa.me/77751934260">Открыть демо в WhatsApp</a>
-          <a class="pill ghost" href="#product">Посмотреть продукт</a>
-        </div>
-        <p class="mono-note"><i>●</i> Pre-launch · демо в разработке · без регистрации на сайте</p>
-      </div>
-      <div class="hero-visual" aria-label="Пример сценария записи в WhatsApp">
-        <div class="chat">
-          <div class="msg usr">Хочу записаться</div>
-          <div class="msg bot">Выберите услугу, дату и время — бот покажет доступные варианты.</div>
-          <div class="msg usr">Окрашивание, завтра</div>
-          <div class="msg bot">Нашёл свободный слот на 11:00.<div class="btns"><b>Подтвердить</b><b>Изменить</b></div></div>
-          <div class="msg bot">Демо-сценарий: реальные записи пока не создаются.<div class="tick">● demo mode</div></div>
-        </div>
-      </div>
-    </section>
-
-    <div class="status" role="status">
-      <span class="status-dot" aria-hidden="true"></span>
-      <div><strong>Demo в разработке</strong><p>Сайт и WhatsApp-сценарий показывают направление продукта. Не отправляйте пароли, платёжные данные или другие чувствительные сведения.</p></div>
+<main id="main"><div class="wrap">
+  <section class="hero" aria-labelledby="hero-title">
+    <div>
+      <span class="kicker">Для салонов · барбершопов · студий</span>
+      <h1 id="hero-title">Клиенты пишут.<br><em>Запись не теряется.</em></h1>
+      <p class="lead">Я делаю Merra Booking — систему, которая должна принимать записи клиентов через WhatsApp, показывать свободное время и помогать администратору не держать всё в голове.</p>
+      <div class="ctas"><a class="pill" href="https://wa.me/77751934260">Попробовать запись в WhatsApp</a><a class="pill ghost" href="#how">Как это работает</a></div>
+      <p class="mono-note"><i>●</i> Early stage · один проект</p>
     </div>
-
-    <section aria-labelledby="problem-title">
-      <div class="sec-head"><span class="kicker">Знакомая проблема</span><h2 id="problem-title">Когда бизнес растёт, сообщения теряются</h2><p>Merra Booking проектируется вокруг трёх узких мест, которые отнимают время у владельца и администратора.</p></div>
-      <div class="problem-grid">
-        <article class="problem"><span class="tag">01 · Входящие</span><h3>Клиент ждёт ответа</h3><p>Запросы приходят в мессенджер, а администратор параллельно работает с залом, звонками и расписанием.</p></article>
-        <article class="problem"><span class="tag">02 · Расписание</span><h3>Слоты живут в чатах</h3><p>Ручная сверка мастеров и времени создаёт двойные записи, пропуски и лишние уточнения.</p></article>
-        <article class="problem"><span class="tag">03 · Возврат</span><h3>Визит заканчивается</h3><p>Без истории, лояльности и понятного follow-up сложно превратить разовый визит в привычку.</p></article>
-      </div>
-    </section>
-
-    <section id="product" aria-labelledby="product-title">
-      <div class="sec-head"><span class="kicker">Продукт в действии</span><h2 id="product-title">Один поток от сообщения до отчёта</h2><p>Клиент общается привычным способом, команда получает единый контекст, а владелец видит операционную картину.</p></div>
-      <div class="flow">
-        <article class="flow-card"><span class="num">01</span><h3>WhatsApp</h3><p>Сценарий помогает выбрать услугу, дату и слот без отдельного приложения.</p></article>
-        <article class="flow-card"><span class="num">02</span><h3>Control Panel</h3><p>Персонал работает с расписанием, статусами и задачами из одного рабочего места.</p></article>
-        <article class="flow-card"><span class="num">03</span><h3>Контуры бизнеса</h3><p>Лояльность, материалы и будущий обмен с учётными системами собираются вокруг визита.</p></article>
-      </div>
-    </section>
-
-    <section aria-labelledby="capabilities-title">
-      <div class="sec-head"><span class="kicker">Возможности</span><h2 id="capabilities-title">Собрано вокруг визита</h2></div>
-      <div class="bento">
-        <article class="bcard wide"><span class="tag">WhatsApp</span><h3>Запись в привычном чате</h3><p>Меню услуг, доступные слоты, подтверждение и отмена — в сценарии, который не требует нового приложения.</p><span class="stat">Концепт · demo mode</span></article>
-        <article class="bcard small"><span class="tag">Команда</span><h3>Единый контекст</h3><p>Расписание и статусы доступны тем сотрудникам, которым они нужны.</p></article>
-        <article class="bcard small"><span class="tag">Лояльность</span><h3>Повторные визиты</h3><p>Баллы, купоны и история могут поддержать отношения с клиентом.</p></article>
-        <article class="bcard half"><span class="tag">Склад</span><h3>Материалы под контролем</h3><p>Техкарты и нормы закладывают основу для списаний и сигналов о запасах.</p></article>
-        <article class="bcard half"><span class="tag">Интеграции</span><h3>Без лишнего двойного ввода</h3><p>Архитектура готовится к обмену с внешними системами без подмены кассы или бухгалтерии.</p></article>
-      </div>
-    </section>
-
-    <section id="how" aria-labelledby="how-title">
-      <div class="sec-head"><span class="kicker">Как это работает</span><h2 id="how-title">Три шага до понятного процесса</h2></div>
-      <div class="steps">
-        <div class="step"><div class="num">01</div><div><h3>Клиент пишет в WhatsApp</h3><p>Он выбирает услугу и задаёт удобное время в привычном канале.</p></div></div>
-        <div class="step"><div class="num">02</div><div><h3>Команда видит общий статус</h3><p>Заявка и контекст процесса должны быть доступны в рабочем интерфейсе без пересылки сообщений между сотрудниками.</p></div></div>
-        <div class="step"><div class="num">03</div><div><h3>Владелец понимает, что происходит</h3><p>Операционные данные, лояльность и запасы постепенно складываются в единый контур.</p></div></div>
-      </div>
-    </section>
-
-    <section id="about" aria-labelledby="about-title">
-      <div class="sec-head"><span class="kicker">О проекте</span><h2 id="about-title">Честный pre-launch вместо громких обещаний</h2></div>
-      <div class="about">
-        <article class="about-card"><h3>Что уже можно посмотреть</h3><p>Публичный сайт, описание продукта и демонстрационный WhatsApp-сценарий. Production-доступ, регистрация и реальные клиентские записи пока не открыты.</p></article>
-        <article class="about-card"><h3>Как связаться</h3><p>Напишите в демо или на <a href="mailto:team@merrabooking.me" style="color:var(--amber-l)">team@merrabooking.me</a>. Мы не просим присылать пароли, платёжные данные и документы.</p></article>
-      </div>
-    </section>
-
-    <div class="band">
-      <div><h2>Посмотреть направление</h2><p>Открыть демо в WhatsApp или задать вопрос команде проекта.</p></div>
-      <div class="ctas"><a class="pill" href="https://wa.me/77751934260">Открыть демо</a><a class="pill ghost" href="mailto:team@merrabooking.me">Написать на email</a></div>
+    <div class="hero-visual" aria-label="Пример будущего диалога записи">
+      <div class="chat"><div class="msg usr">Хочу записаться на окрашивание</div><div class="msg bot">Покажу свободное время. Выберите мастера или ближайшее окно.</div><div class="msg usr">Завтра после 11:00</div><div class="msg bot">Нашёл варианты:<div class="btns"><b>11:00</b><b>13:30</b><b>15:00</b></div></div><div class="msg bot">После подтверждения клиент получает детали визита и напоминание.</div></div>
     </div>
-  </div>
-</main>
+  </section>
 
-<footer>
-  <div class="wrap">
-    <div class="cols">
-      <div><span class="lbl">Merra Booking</span><p>Pre-launch AI CRM для салонов красоты, барбершопов и студий.</p></div>
-      <div><span class="lbl">Продукт</span><a href="#product">Продукт</a><a href="#how">Как это работает</a><a href="#about">О проекте</a></div>
-      <div><span class="lbl">Документы</span><a href="privacy.html">Политика конфиденциальности</a><a href="terms.html">Условия использования</a><a href="data-deletion/">Удаление данных</a><a href="mailto:team@merrabooking.me">team@merrabooking.me</a></div>
+  <div class="early">Ищу первые салоны в Костанае, чтобы проверить идею на реальной работе.</div>
+
+  <section aria-labelledby="pain-title"><div class="sec-head"><span class="kicker">Знакомая ситуация</span><h2 id="pain-title">Пока вы отвечаете, клиент может уйти</h2><p>Я делаю этот проект не ради ещё одной панели. Начал с ситуаций, которые каждый день отнимают время у владельца и администратора.</p></div>
+    <div class="pain-grid">
+      <article class="card"><span class="tag">Вечер</span><h3>«Ответили утром»</h3><p>Клиент спросил про окрашивание в десять вечера. К утру он уже записался туда, где ответили сразу.</p></article>
+      <article class="card"><span class="tag">Администратор</span><h3>«Я не успеваю»</h3><p>Одной рукой встречают клиента, другой отвечают в мессенджере, третьей сверяют расписание. Что-то обязательно теряется.</p></article>
+      <article class="card"><span class="tag">Расписание</span><h3>«А я думал, на пять»</h3><p>Мастера, время и отмены живут в переписке, тетради и памяти. Рано или поздно они расходятся.</p></article>
+      <article class="card"><span class="tag">Повторный визит</span><h3>«Он пропал»</h3><p>Клиент пришёл один раз, а через месяц ему никто не напомнил о себе.</p></article>
     </div>
-    <div class="foot-note"><span>© 2026 Merra Booking</span><span>merrabooking.me · Demo в разработке</span></div>
-  </div>
-</footer>
+  </section>
+
+  <section id="how" aria-labelledby="how-title"><div class="sec-head"><span class="kicker">Сценарий</span><h2 id="how-title">Как я хочу это устроить</h2><p>Не нужно объяснять клиенту новый сайт или просить его ставить приложение.</p></div>
+    <div class="steps">
+      <div class="step"><div class="num">01</div><div><h3>Клиент пишет в WhatsApp</h3><p>Выбирает услугу, мастера и удобное время кнопками или обычным сообщением.</p></div></div>
+      <div class="step"><div class="num">02</div><div><h3>Запись попадает в расписание</h3><p>Администратор и мастер должны видеть её сразу, а клиент — получить подтверждение и напоминание.</p></div></div>
+      <div class="step"><div class="num">03</div><div><h3>Владелец видит, что происходит</h3><p>Кто записан, кто отменил, кто давно не приходил и кому можно написать.</p></div></div>
+    </div>
+  </section>
+
+  <section id="features" aria-labelledby="features-title"><div class="sec-head"><span class="kicker">Что должно уметь</span><h2 id="features-title">Не функции ради функций</h2><p>Я собираю Merra Booking вокруг конкретных задач владельца и администратора.</p></div>
+    <div class="feature-grid">
+      <article class="card"><span class="tag">Сообщения</span><h3>Клиент получает ответ вовремя</h3><p>Подтверждения, напоминания и сообщение после услуги — с настройками владельца, а не с неожиданными рассылками.</p></article>
+      <article class="card"><span class="tag">Расписание</span><h3>Свободные окна видны заранее</h3><p>Мастера, услуги, переносы и отмены должны собираться в одном расписании вместо нескольких чатов.</p></article>
+      <article class="card"><span class="tag">Клиенты</span><h3>История не теряется</h3><p>История визитов и заметки вроде «хрупкие волосы» помогают обслуживать человека, а не начинать разговор с нуля.</p></article>
+      <article class="card"><span class="tag">Возврат</span><h3>Акции доходят до нужных людей</h3><p>Скидки, баллы, купоны и сообщения тем, кто давно не заходил, должны настраиваться самим салоном.</p></article>
+      <article class="card"><span class="tag">Операции</span><h3>Меньше перепечатывания</h3><p>Материалы, Excel и обмен с 1С можно связать с услугами, если это действительно упростит работу.</p></article>
+      <article class="card"><span class="tag">Контроль</span><h3>Решения остаются у владельца</h3><p>Подключать только нужное, менять правила и не отправлять сообщения клиентам без своего разрешения.</p></article>
+    </div>
+  </section>
+
+  <section aria-labelledby="compare-title"><div class="sec-head"><span class="kicker">Зачем ещё один инструмент</span><h2 id="compare-title">Не тетрадь, не Excel и не обещание «волшебной кнопки»</h2></div>
+    <div class="compare-grid">
+      <article class="card"><h3>Тетрадь и чаты</h3><p>Дешёво начать, но сложно быстро найти историю, проверить свободное окно и понять, кому давно не отвечали.</p></article>
+      <article class="card"><h3>Большая система</h3><p>Может быть мощной, но владельцу небольшого салона часто нужна не вся система сразу, а понятная запись без лишнего.</p></article>
+    </div>
+  </section>
+
+  <section id="about" aria-labelledby="about-title"><div class="sec-head"><span class="kicker">Обо мне</span><h2 id="about-title">Я делаю это в Костанае</h2></div>
+    <div class="about-grid"><article class="card"><h3>Первые клиенты нужны мне для проверки</h3><p>Я ищу первые пять салонов, которые готовы показать свою реальную работу: как приходят сообщения, как ведётся расписание и где чаще всего возникают ошибки.</p></article><article class="card"><h3>Можно просто поговорить</h3><p>Напишите мне на <a href="mailto:team@merrabooking.me" style="color:var(--amber-l)">team@merrabooking.me</a> или в WhatsApp. Я покажу направление проекта и соберу пожелания без обязательств.</p></article></div>
+  </section>
+
+  <section id="faq" aria-labelledby="faq-title"><div class="sec-head"><span class="kicker">Вопросы</span><h2 id="faq-title">Что важно знать заранее</h2></div>
+    <div class="faq">
+      <details><summary>Сколько это стоит?</summary><p>Цена появится после первых тестов: сначала я хочу понять, какие сценарии действительно нужны салонам.</p></details>
+      <details><summary>Нужно ли разбираться в технике?</summary><p>Моя цель — сделать подключение понятным и помогать с настройкой. Сейчас я собираю обратную связь, поэтому буду проходить первые сценарии вместе с салонами.</p></details>
+      <details><summary>Что происходит с данными клиентов?</summary><p>Не отправляйте в демо пароли, платёжные данные, документы или медицинскую информацию. Подробности о текущих потоках данных описаны в <a href="privacy.html" style="color:var(--amber-l)">политике конфиденциальности</a>.</p></details>
+      <details><summary>Работает ли уже Telegram?</summary><p>Нет обещания готовой интеграции: сейчас я начинаю со сценария WhatsApp, а остальные каналы рассматриваю дальше.</p></details>
+    </div>
+  </section>
+
+  <div class="band"><div><h2>Хотите быть среди первых?</h2><p>Напишите, как сейчас устроена запись в вашем салоне. Я покажу, что строю, и задам несколько вопросов.</p></div><div class="ctas"><a class="pill" href="https://wa.me/77751934260">Написать в WhatsApp</a><a class="pill ghost" href="mailto:team@merrabooking.me">Написать на email</a></div></div>
+</div></main>
+
+<footer><div class="wrap"><div class="cols"><div><span class="lbl">Merra Booking</span><p>Проект системы записи через WhatsApp для салонов, барбершопов и студий.</p></div><div><span class="lbl">На странице</span><a href="#how">Как это работает</a><a href="#features">Что планируется</a><a href="#faq">Вопросы</a><a href="#about">Обо мне</a></div><div><span class="lbl">Документы</span><a href="privacy.html">Политика конфиденциальности</a><a href="terms.html">Условия использования</a><a href="data-deletion/">Удаление данных</a><a href="mailto:team@merrabooking.me">team@merrabooking.me</a></div></div><div class="foot-note"><span>© 2026 Merra Booking</span><span>merrabooking.me</span></div></div></footer>
 <script>
-  const toggle = document.querySelector('.menu-toggle');
-  const menu = document.querySelector('#main-nav');
-  const closeMenu = () => { menu.dataset.open = 'false'; toggle.setAttribute('aria-expanded', 'false'); toggle.setAttribute('aria-label', 'Открыть меню'); };
-  toggle.addEventListener('click', () => {
-    const open = menu.dataset.open !== 'true';
-    menu.dataset.open = String(open);
-    toggle.setAttribute('aria-expanded', String(open));
-    toggle.setAttribute('aria-label', open ? 'Закрыть меню' : 'Открыть меню');
-    if (open) menu.querySelector('a').focus();
-  });
-  menu.querySelectorAll('a').forEach(link => link.addEventListener('click', closeMenu));
-  document.addEventListener('keydown', event => { if (event.key === 'Escape' && menu.dataset.open === 'true') { closeMenu(); toggle.focus(); } });
+  const toggle=document.querySelector('.menu-toggle'); const menu=document.querySelector('#main-nav');
+  const closeMenu=()=>{menu.dataset.open='false';toggle.setAttribute('aria-expanded','false');toggle.setAttribute('aria-label','Открыть меню');};
+  toggle.addEventListener('click',()=>{const open=menu.dataset.open!=='true';menu.dataset.open=String(open);toggle.setAttribute('aria-expanded',String(open));toggle.setAttribute('aria-label',open?'Закрыть меню':'Открыть меню');if(open)menu.querySelector('a').focus();});
+  menu.querySelectorAll('a').forEach(link=>link.addEventListener('click',closeMenu));
+  document.addEventListener('keydown',event=>{if(event.key==='Escape'&&menu.dataset.open==='true'){closeMenu();toggle.focus();}});
 </script>
 </body>
 </html>
