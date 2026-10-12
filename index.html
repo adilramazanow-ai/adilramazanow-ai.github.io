@@ -4,145 +4,177 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Merra Booking — AI CRM для сервисного бизнеса</title>
-<meta name="description" content="Merra Booking — AI CRM для записи клиентов, автоматических сообщений, CRM-карточек, лояльности, склада и интеграций.">
+<meta name="description" content="Merra Booking объединяет запись клиентов, CRM, автоматические сообщения и операционные задачи в одной системе.">
 <meta name="robots" content="index, follow">
-<meta name="theme-color" content="#0D0D0D">
+<meta name="theme-color" content="#f7f7f2">
 <link rel="canonical" href="https://merrabooking.me/">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Merra Booking">
 <meta property="og:title" content="Merra Booking — AI CRM для сервисного бизнеса">
-<meta property="og:description" content="Запись клиентов, CRM, автоматические сообщения, лояльность и интеграции в одной системе.">
+<meta property="og:description" content="Запись, CRM и автоматические сообщения в одной спокойной рабочей системе.">
 <meta property="og:url" content="https://merrabooking.me/">
 <meta property="og:locale" content="ru_RU">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Merra Booking — AI CRM для сервисного бизнеса">
-<meta name="twitter:description" content="Запись клиентов, CRM, автоматические сообщения, лояльность и интеграции в одной системе.">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%230D0D0D'/%3E%3Ctext x='16' y='23' font-size='17' text-anchor='middle' fill='%23EF9F27' font-family='Arial Black'%3EM%3C/text%3E%3C/svg%3E">
+<meta name="twitter:description" content="Запись, CRM и автоматические сообщения в одной спокойной рабочей системе.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='9' fill='%23111110'/%3E%3Ctext x='16' y='23' font-size='17' text-anchor='middle' fill='%23f5b6d5' font-family='Arial Black'%3EM%3C/text%3E%3C/svg%3E">
 <style>
-  @font-face { font-family:'Bebas Neue'; src:url('assets/fonts/bebas-neue.ttf') format('truetype'); font-weight:400; font-display:swap; }
-  @font-face { font-family:'DM Sans'; src:url('assets/fonts/dm-sans-400.ttf') format('truetype'); font-weight:400; font-display:swap; }
-  @font-face { font-family:'DM Sans'; src:url('assets/fonts/dm-sans-500.ttf') format('truetype'); font-weight:500; font-display:swap; }
-  @font-face { font-family:'DM Sans'; src:url('assets/fonts/dm-sans-600.ttf') format('truetype'); font-weight:600; font-display:swap; }
-  @font-face { font-family:'DM Sans'; src:url('assets/fonts/dm-sans-700.ttf') format('truetype'); font-weight:700; font-display:swap; }
-  @font-face { font-family:'DM Mono'; src:url('assets/fonts/dm-mono-400.ttf') format('truetype'); font-weight:400; font-display:swap; }
-  * { margin:0; padding:0; box-sizing:border-box; }
-  :root { --bg:#0D0D0D; --surface:#141414; --card:#1A1A1A; --line:#2A2A2A; --line2:#444; --amber:#EF9F27; --amber-l:#FFB84D; --teal:#1D9E75; --txt:#F5F3EE; --mut:#B9B8B8; --dim:#777; --display:'Bebas Neue',Impact,sans-serif; --body:'DM Sans',system-ui,sans-serif; --mono:'DM Mono',monospace; }
-  html { scroll-behavior:smooth; scroll-padding-top:88px; }
-  @media (prefers-reduced-motion:reduce) { html { scroll-behavior:auto; } *,*::before,*::after { transition-duration:.01ms !important; animation-duration:.01ms !important; } }
-  body { background:var(--bg); color:var(--txt); font-family:var(--body); line-height:1.6; overflow-x:hidden; }
-  a { color:inherit; text-decoration:none; } a:focus-visible,button:focus-visible { outline:3px solid var(--amber-l); outline-offset:4px; border-radius:5px; }
-  .skip-link { position:absolute; left:16px; top:-60px; z-index:100; padding:12px 16px; background:var(--amber); color:var(--bg); font-weight:700; } .skip-link:focus { top:16px; }
-  .glow { position:fixed; inset:0; pointer-events:none; z-index:-1; background:radial-gradient(circle at top,rgba(239,159,39,.12),var(--bg) 30%); }
-  .wrap { max-width:1180px; margin:0 auto; padding:0 24px; }
-  header { position:sticky; top:0; z-index:50; background:rgba(13,13,13,.92); backdrop-filter:blur(14px); border-bottom:1px solid var(--line); }
-  .nav { min-height:72px; display:flex; align-items:center; justify-content:space-between; gap:20px; } .logo { font-family:var(--display); font-size:26px; letter-spacing:1px; text-transform:uppercase; white-space:nowrap; } .logo b { color:var(--amber); font-weight:400; }
-  .nav-links { display:flex; align-items:center; gap:25px; } .nav-links a { color:var(--mut); font-size:14px; } .nav-links a:hover { color:var(--txt); }
-  .menu-toggle { display:none; min-width:44px; min-height:44px; padding:8px; border:1px solid var(--line2); border-radius:8px; background:transparent; color:var(--txt); cursor:pointer; font-size:21px; }
-  .pill { display:inline-flex; align-items:center; justify-content:center; min-height:44px; padding:10px 20px; border:1px solid transparent; border-radius:999px; background:var(--amber); color:var(--bg); font-size:14px; font-weight:700; cursor:pointer; transition:transform .15s,background .15s,box-shadow .2s; } .pill:hover { background:var(--amber-l); transform:translateY(-1px); box-shadow:0 5px 16px rgba(239,159,39,.3); } .pill.ghost { background:transparent; border-color:var(--line2); color:var(--txt); } .pill.ghost:hover { border-color:var(--amber); color:var(--amber-l); box-shadow:none; }
-  .hero { display:grid; grid-template-columns:1.05fr .95fr; gap:58px; align-items:center; padding:92px 0 58px; } .kicker,.tag,.meta { font-family:var(--mono); font-size:11px; letter-spacing:2px; text-transform:uppercase; } .kicker { color:var(--amber); margin-bottom:20px; }
-  h1,h2,h3 { font-family:var(--display); font-weight:400; text-transform:uppercase; letter-spacing:1px; line-height:1; } h1 { font-size:clamp(55px,8vw,100px); } h1 em { color:var(--amber); font-style:normal; } h2 { font-size:clamp(38px,5vw,60px); }
-  .lead { max-width:570px; margin-top:24px; color:var(--mut); font-size:18px; } .ctas { display:flex; flex-wrap:wrap; gap:12px; margin-top:32px; } .mono-note { margin-top:22px; color:var(--dim); font-family:var(--mono); font-size:12px; letter-spacing:1px; text-transform:uppercase; } .mono-note i { color:var(--teal); font-style:normal; }
-  .hero-visual { background:var(--card); border:1px solid var(--line); border-radius:14px; padding:20px; transform:rotate(1.2deg); } .chat { display:flex; flex-direction:column; gap:10px; } .msg { max-width:84%; padding:10px 14px; border-radius:12px; font-size:13px; line-height:1.45; } .msg.bot { align-self:flex-start; background:#232323; border:1px solid var(--line); color:#dedee1; } .msg.usr { align-self:flex-end; background:rgba(239,159,39,.14); border:1px solid rgba(239,159,39,.35); } .msg .btns { display:flex; flex-wrap:wrap; gap:8px; margin-top:10px; } .msg .btns b { padding:6px 12px; border:1px solid rgba(239,159,39,.5); border-radius:999px; color:var(--amber-l); font-family:var(--mono); font-size:11px; font-weight:500; }
-  .early { display:inline-flex; align-items:center; gap:10px; margin:0 0 24px; padding:11px 14px; border:1px solid rgba(29,158,117,.45); border-radius:8px; background:rgba(29,158,117,.08); color:#d4eee5; font-size:14px; } .early::before { content:'●'; color:var(--teal); }
-  section { padding:68px 0; } .sec-head .kicker { display:block; color:var(--dim); margin-bottom:14px; } .sec-head p { max-width:650px; margin-top:14px; color:var(--mut); }
-  .pain-grid,.feature-grid,.compare-grid,.about-grid { display:grid; gap:16px; margin-top:34px; } .pain-grid { grid-template-columns:repeat(4,1fr); } .feature-grid { grid-template-columns:repeat(2,1fr); } .compare-grid,.about-grid { grid-template-columns:repeat(2,1fr); }
-  .card { padding:24px; border:1px solid var(--line); border-radius:12px; background:var(--card); } .card h3 { margin:12px 0 9px; font-size:25px; } .card p { color:var(--mut); font-size:14px; } .tag { color:var(--amber); }
-  .steps { margin-top:34px; border-top:1px solid var(--line); } .step { display:grid; grid-template-columns:70px 1fr; gap:20px; padding:24px 0; border-bottom:1px solid var(--line); } .step .num { color:var(--amber); font-family:var(--display); font-size:40px; } .step h3 { margin:4px 0 7px; font-family:var(--body); font-size:17px; font-weight:700; text-transform:none; letter-spacing:0; } .step p { color:var(--mut); font-size:14px; }
-  .faq { margin-top:34px; border-top:1px solid var(--line); } details { padding:20px 0; border-bottom:1px solid var(--line); } summary { cursor:pointer; list-style:none; font-size:16px; font-weight:700; } summary::-webkit-details-marker { display:none; } summary::after { content:'+'; float:right; color:var(--amber); font-size:22px; font-weight:400; } details[open] summary::after { content:'−'; } details p { max-width:760px; margin-top:10px; color:var(--mut); font-size:14px; }
-  .band { display:flex; align-items:center; justify-content:space-between; gap:24px; flex-wrap:wrap; margin:40px 0 80px; padding:42px; border:1px solid var(--line); border-radius:12px; background:linear-gradient(180deg,#1e1e1c,var(--card)); } .band h2 { font-size:clamp(32px,4vw,48px); } .band p { margin-top:10px; color:var(--mut); }
-  footer { padding:48px 0; border-top:1px solid var(--line); background:var(--surface); } .cols { display:grid; grid-template-columns:2fr 1fr 1fr; gap:32px; } .cols .lbl { display:block; margin-bottom:12px; color:var(--dim); font-family:var(--mono); font-size:11px; letter-spacing:2px; text-transform:uppercase; } .cols a,.cols p { display:block; margin-bottom:8px; color:var(--mut); font-size:14px; } .cols a:hover { color:var(--txt); } .foot-note { display:flex; justify-content:space-between; flex-wrap:wrap; gap:12px; margin-top:38px; padding-top:20px; border-top:1px solid var(--line); color:var(--dim); font-family:var(--mono); font-size:12px; }
-  @media (max-width:1000px) { .pain-grid { grid-template-columns:repeat(2,1fr); } }
-  @media (max-width:900px) { .hero { grid-template-columns:1fr; padding:62px 0 48px; } .hero-visual { transform:none; } .menu-toggle { display:block; } .nav-links { display:none; position:absolute; left:16px; right:16px; top:68px; flex-direction:column; align-items:stretch; gap:0; padding:8px; border:1px solid var(--line); border-radius:10px; background:#171717; } .nav-links[data-open="true"] { display:flex; } .nav-links a { padding:13px 12px; border-radius:6px; } .nav-links a:hover { background:#232323; } .nav>.pill { display:none; } .cols { grid-template-columns:1fr; } }
-  @media (max-width:650px) { .wrap { padding:0 18px; } .hero h1 { font-size:55px; } .lead { font-size:16px; } .pain-grid,.feature-grid,.compare-grid,.about-grid { grid-template-columns:1fr; } .ctas .pill,.band .pill { width:100%; } .band { padding:28px 22px; margin-bottom:52px; } .step { grid-template-columns:52px 1fr; gap:14px; } }
+  @font-face{font-family:'DM Sans';src:url('assets/fonts/dm-sans-400.ttf') format('truetype');font-weight:400;font-display:swap}
+  @font-face{font-family:'DM Sans';src:url('assets/fonts/dm-sans-500.ttf') format('truetype');font-weight:500;font-display:swap}
+  @font-face{font-family:'DM Sans';src:url('assets/fonts/dm-sans-600.ttf') format('truetype');font-weight:600;font-display:swap}
+  @font-face{font-family:'DM Sans';src:url('assets/fonts/dm-sans-700.ttf') format('truetype');font-weight:700;font-display:swap}
+  @font-face{font-family:'DM Mono';src:url('assets/fonts/dm-mono-400.ttf') format('truetype');font-weight:400;font-display:swap}
+  *{box-sizing:border-box;margin:0;padding:0}
+  :root{--ink:#111110;--muted:#696a67;--soft:#999b97;--paper:#f7f7f2;--white:#fff;--line:#dedfd8;--pink:#f5b6d5;--lav:#c9c6ff;--blue:#b8d9ff;--lime:#d9efb1;--body:'DM Sans',system-ui,sans-serif;--mono:'DM Mono',monospace;--radius:26px}
+  html{scroll-behavior:smooth;scroll-padding-top:90px}
+  body{background:var(--paper);color:var(--ink);font-family:var(--body);line-height:1.55;overflow-x:hidden}
+  @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{animation-duration:.01ms!important;transition-duration:.01ms!important}}
+  a{color:inherit;text-decoration:none}
+  a:focus-visible,button:focus-visible,summary:focus-visible{outline:3px solid var(--ink);outline-offset:4px;border-radius:8px}
+  .skip-link{position:absolute;left:18px;top:-60px;z-index:100;padding:12px 16px;background:var(--ink);color:var(--white);border-radius:10px;font-weight:700}
+  .skip-link:focus{top:16px}
+  .wrap{width:min(1160px,calc(100% - 40px));margin:auto}
+  header{position:sticky;top:0;z-index:20;background:rgba(247,247,242,.84);backdrop-filter:blur(16px);border-bottom:1px solid rgba(222,223,216,.8)}
+  .nav{min-height:78px;display:flex;align-items:center;gap:28px;justify-content:space-between}
+  .logo{font-weight:700;letter-spacing:-.06em;font-size:22px}
+  .logo span{display:inline-block;margin-left:3px;color:#d27da8}
+  .nav-links{display:flex;align-items:center;gap:30px;margin-left:auto}
+  .nav-links a{font-size:14px;color:var(--muted);transition:color .2s}
+  .nav-links a:hover{color:var(--ink)}
+  .menu-toggle{display:none;min-width:44px;min-height:44px;border:1px solid var(--line);border-radius:12px;background:var(--white);color:var(--ink);font-size:19px;cursor:pointer}
+  .button{display:inline-flex;align-items:center;justify-content:center;gap:9px;min-height:48px;padding:13px 20px;border:1px solid var(--ink);border-radius:999px;background:var(--ink);color:var(--white);font-size:14px;font-weight:600;transition:transform .2s,box-shadow .2s,background .2s}
+  .button:hover{transform:translateY(-2px);box-shadow:0 12px 24px rgba(17,17,16,.12)}
+  .button.secondary{background:transparent;color:var(--ink);border-color:var(--line)}
+  .button.secondary:hover{background:var(--white);box-shadow:none}
+  .eyebrow{font-family:var(--mono);font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
+  .hero{position:relative;display:grid;grid-template-columns:1fr .86fr;gap:70px;align-items:center;padding:96px 0 88px}
+  .hero:before{content:"";position:absolute;z-index:-1;top:40px;right:-120px;width:560px;height:440px;border-radius:50%;background:radial-gradient(circle,rgba(201,198,255,.68),rgba(245,182,213,.2) 52%,transparent 70%);filter:blur(8px)}
+  h1,h2,h3{letter-spacing:-.065em;line-height:1.02}
+  h1{max-width:700px;margin-top:20px;font-size:clamp(54px,8vw,96px);font-weight:500}
+  h1 em{font-style:normal;color:#a9678e}
+  .lead{max-width:580px;margin-top:26px;color:var(--muted);font-size:19px;line-height:1.55}
+  .actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:34px}
+  .status{display:inline-flex;align-items:center;gap:9px;margin-top:22px;color:var(--muted);font-size:12px}
+  .status:before{content:"";width:8px;height:8px;border-radius:50%;background:#a5ce72;box-shadow:0 0 0 5px rgba(165,206,114,.2)}
+  .hero-panel{position:relative;min-height:460px;padding:18px;border:1px solid rgba(17,17,16,.1);border-radius:32px;background:linear-gradient(145deg,#fff 5%,#f2edff 54%,#f8d9e7);box-shadow:0 24px 70px rgba(94,84,128,.13);transform:rotate(1.2deg)}
+  .window{height:100%;overflow:hidden;border:1px solid rgba(17,17,16,.1);border-radius:22px;background:rgba(255,255,255,.78);box-shadow:0 12px 34px rgba(17,17,16,.08)}
+  .window-bar{display:flex;align-items:center;gap:6px;padding:15px 17px;border-bottom:1px solid var(--line);background:rgba(255,255,255,.7)}
+  .window-bar i{display:block;width:7px;height:7px;border-radius:50%;background:#e9a8c6}.window-bar i:nth-child(2){background:#c8c4fa}.window-bar i:nth-child(3){background:#b9d993}
+  .window-title{margin-left:auto;color:var(--soft);font-family:var(--mono);font-size:10px}
+  .dash{display:grid;grid-template-columns:92px 1fr;min-height:385px}
+  .dash-side{padding:18px 12px;border-right:1px solid var(--line);background:rgba(247,247,242,.72)}
+  .dash-brand{margin-bottom:28px;font-size:12px;font-weight:700}
+  .dash-nav{display:grid;gap:12px;color:var(--soft);font-size:10px}.dash-nav b{color:var(--ink);font-weight:600}
+  .dash-main{padding:22px 20px}
+  .dash-main h3{font-size:24px;font-weight:600;letter-spacing:-.05em}
+  .dash-sub{margin-top:5px;color:var(--soft);font-size:11px}
+  .stats{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-top:22px}
+  .stat{padding:12px;border:1px solid var(--line);border-radius:13px;background:rgba(255,255,255,.72)}
+  .stat small{display:block;color:var(--soft);font-size:9px}.stat strong{display:block;margin-top:5px;font-size:17px}
+  .calendar{display:grid;gap:8px;margin-top:18px}.cal-row{display:grid;grid-template-columns:42px 1fr;align-items:center;gap:8px}.cal-time{color:var(--soft);font-family:var(--mono);font-size:9px}.cal-event{min-height:30px;padding:7px 9px;border-radius:9px;background:#e8e5ff;color:#55517a;font-size:10px}.cal-event.pink{background:#f8dce9;color:#85536e}.cal-event.green{background:#e7f1ce;color:#61734a}
+  .notice{margin:0 0 80px;padding:18px 22px;border:1px solid rgba(17,17,16,.1);border-radius:18px;background:rgba(255,255,255,.68);color:var(--muted);font-size:13px}
+  .notice strong{color:var(--ink)}
+  section{padding:92px 0}
+  .section-head{max-width:700px}.section-head h2{margin-top:16px;font-size:clamp(40px,6vw,68px);font-weight:500}.section-head p{max-width:590px;margin-top:18px;color:var(--muted);font-size:17px}
+  .feature-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:38px}
+  .feature{min-height:230px;padding:25px;border:1px solid var(--line);border-radius:var(--radius);background:var(--white);transition:transform .2s,box-shadow .2s}
+  .feature:hover{transform:translateY(-4px);box-shadow:0 18px 38px rgba(17,17,16,.07)}
+  .feature-icon{display:flex;align-items:center;justify-content:center;width:42px;height:42px;border-radius:13px;background:var(--lav);font-size:18px}.feature:nth-child(2) .feature-icon{background:var(--pink)}.feature:nth-child(3) .feature-icon{background:var(--lime)}
+  .feature h3{margin-top:34px;font-size:24px;font-weight:600;letter-spacing:-.05em}.feature p{margin-top:10px;color:var(--muted);font-size:14px}
+  .split{display:grid;grid-template-columns:.86fr 1fr;gap:76px;align-items:center}
+  .split.reverse{grid-template-columns:1fr .86fr}
+  .split.reverse .copy{order:2}
+  .copy h2{margin-top:16px;font-size:clamp(40px,5vw,64px);font-weight:500}.copy p{margin-top:18px;color:var(--muted);font-size:17px}.copy .button{margin-top:25px}
+  .visual{position:relative;min-height:390px;padding:25px;border-radius:32px;background:linear-gradient(145deg,#e4f1ff,#f2e7ff 55%,#f8d9e8);overflow:hidden}
+  .visual:after{content:"";position:absolute;right:-70px;bottom:-100px;width:280px;height:280px;border-radius:50%;background:rgba(255,255,255,.48);filter:blur(5px)}
+  .phone{position:relative;z-index:1;width:min(280px,75%);margin:0 auto;padding:11px;border:7px solid #181817;border-radius:31px;background:#fff;box-shadow:0 24px 40px rgba(61,50,80,.18);transform:rotate(-4deg)}
+  .phone-top{width:82px;height:15px;margin:0 auto 16px;border-radius:0 0 12px 12px;background:#181817}.phone-title{font-size:13px;font-weight:700}.phone-muted{margin-top:3px;color:var(--soft);font-size:9px}.bubble{margin-top:18px;padding:10px 12px;border-radius:14px 14px 14px 4px;background:#f1efff;color:#58547c;font-size:11px}.bubble.right{margin-left:24px;border-radius:14px 14px 4px 14px;background:#f8dce9;color:#85536e}.phone-buttons{display:grid;grid-template-columns:1fr 1fr;gap:7px;margin-top:10px}.phone-buttons b{padding:8px 4px;border:1px solid #d7d3fa;border-radius:9px;color:#64609a;text-align:center;font-size:9px;font-weight:500}
+  .board{position:relative;z-index:1;padding:20px;border:1px solid rgba(17,17,16,.1);border-radius:20px;background:rgba(255,255,255,.78);box-shadow:0 18px 35px rgba(78,69,104,.12)}.board-head{display:flex;justify-content:space-between;align-items:center}.board-head strong{font-size:16px}.board-head span{color:var(--soft);font-size:10px}.board-list{display:grid;gap:9px;margin-top:18px}.person{display:grid;grid-template-columns:34px 1fr auto;align-items:center;gap:10px;padding:10px;border-radius:12px;background:#fff}.avatar{display:flex;align-items:center;justify-content:center;width:34px;height:34px;border-radius:11px;background:var(--pink);font-size:11px;font-weight:700}.person:nth-child(2) .avatar{background:var(--lav)}.person:nth-child(3) .avatar{background:var(--lime)}.person strong{display:block;font-size:11px}.person small{display:block;color:var(--soft);font-size:9px}.person em{font-style:normal;color:#789a52;font-size:10px}
+  .details-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:36px}.details-grid details{padding:20px 22px;border:1px solid var(--line);border-radius:18px;background:rgba(255,255,255,.58)}summary{cursor:pointer;list-style:none;font-size:15px;font-weight:600}summary::-webkit-details-marker{display:none}summary:after{content:"+";float:right;color:var(--soft);font-size:20px;font-weight:400}details[open] summary:after{content:"−"}details p{margin-top:12px;color:var(--muted);font-size:14px}
+  .cta{position:relative;overflow:hidden;margin:30px 0 90px;padding:62px 56px;border-radius:32px;background:var(--ink);color:var(--white)}.cta:after{content:"";position:absolute;right:-60px;top:-120px;width:370px;height:370px;border-radius:50%;background:radial-gradient(circle,rgba(245,182,213,.75),transparent 68%)}.cta>*{position:relative;z-index:1}.cta h2{max-width:630px;font-size:clamp(42px,6vw,72px);font-weight:500}.cta p{max-width:530px;margin-top:15px;color:#bdbdb8;font-size:16px}.cta .actions{margin-top:28px}.cta .button.secondary{border-color:#4c4c48;color:var(--white)}
+  footer{padding:36px 0 50px;border-top:1px solid var(--line)}.footer-grid{display:grid;grid-template-columns:1.7fr 1fr 1fr;gap:30px}.footer-title{font-weight:700;font-size:18px;letter-spacing:-.05em}.footer-grid p,.footer-grid a{display:block;margin-top:10px;color:var(--muted);font-size:13px}.footer-grid a:hover{color:var(--ink)}.footer-label{font-family:var(--mono);font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:var(--soft)}.foot-note{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;margin-top:38px;padding-top:18px;border-top:1px solid var(--line);color:var(--soft);font-family:var(--mono);font-size:10px}
+  @media(max-width:900px){.hero{grid-template-columns:1fr;gap:42px;padding-top:68px}.hero-panel{max-width:650px}.feature-grid{grid-template-columns:1fr 1fr}.split,.split.reverse{grid-template-columns:1fr;gap:34px}.split.reverse .copy{order:0}.visual{min-height:350px}.nav-links{display:none;position:absolute;left:20px;right:20px;top:70px;flex-direction:column;align-items:stretch;gap:2px;padding:8px;border:1px solid var(--line);border-radius:18px;background:rgba(255,255,255,.96);box-shadow:0 18px 40px rgba(17,17,16,.1)}.nav-links[data-open=true]{display:flex}.nav-links a{padding:13px 12px}.menu-toggle{display:block}.nav>.button{display:none}}
+  @media(max-width:620px){.wrap{width:min(100% - 28px,1160px)}.hero{padding:54px 0 60px}.hero:before{right:-230px}.hero-panel{min-height:390px;padding:11px;border-radius:24px}.dash{grid-template-columns:68px 1fr}.dash-side{padding:14px 8px}.dash-main{padding:18px 12px}.dash-main h3{font-size:19px}.stats{gap:5px}.stat{padding:8px}.stat strong{font-size:14px}.calendar{margin-top:13px}.feature-grid,.details-grid{grid-template-columns:1fr}.feature{min-height:0}.split{gap:24px}.visual{min-height:320px;padding:18px}.cta{margin-bottom:60px;padding:38px 24px;border-radius:24px}.footer-grid{grid-template-columns:1fr 1fr}.footer-grid>div:first-child{grid-column:1/-1}.notice{margin-bottom:50px}.section-head p,.lead,.copy p{font-size:16px}}
 </style>
 </head>
 <body>
 <a class="skip-link" href="#main">Перейти к содержанию</a>
-<div class="glow"></div>
 <header><div class="wrap nav">
-  <a class="logo" href="/" aria-label="Merra Booking — на главную">Merra<b>·</b>Booking</a>
+  <a class="logo" href="/" aria-label="Merra Booking — на главную">Merra<span>·</span>Booking</a>
   <button class="menu-toggle" type="button" aria-label="Открыть меню" aria-controls="main-nav" aria-expanded="false">☰</button>
   <nav id="main-nav" class="nav-links" aria-label="Основная навигация" data-open="false">
     <a href="#features">Возможности</a><a href="#how">Как это работает</a><a href="#faq">Вопросы</a><a href="#contact">Написать мне</a>
   </nav>
-  <a class="pill" href="mailto:team@merrabooking.me">Написать мне</a>
+  <a class="button" href="mailto:team@merrabooking.me">Написать мне <span aria-hidden="true">↗</span></a>
 </div></header>
 
-<main id="main"><div class="wrap">
-  <section class="hero" aria-labelledby="hero-title">
-    <div>
-      <span class="kicker">AI CRM · WhatsApp · Telegram · Instagram</span>
-      <h1 id="hero-title">Запись клиентов,<br><em>которая работает сама</em></h1>
-      <p class="lead">Автоматическая запись, автоматическая карточка клиента и автоматические сообщения. Вы принимаете людей, Merra Booking делает остальное.</p>
-      <div class="ctas"><a class="pill" href="https://wa.me/77751934260">Попробовать демо</a><a class="pill ghost" href="#contact">Получить ранний доступ</a></div>
-    </div>
-    <div class="hero-visual" aria-label="Демонстрационный диалог записи">
-      <div class="chat"><div class="msg usr">Хочу записаться на окрашивание</div><div class="msg bot">Выберите мастера и удобное время.</div><div class="msg usr">Завтра после 11:00</div><div class="msg bot">Свободные окна:<div class="btns"><b>11:00</b><b>13:30</b><b>15:00</b></div></div><div class="msg bot">Запись подтверждена. Напоминание отправится автоматически.</div></div>
-    </div>
-  </section>
+<main id="main">
+  <div class="wrap">
+    <section class="hero" aria-labelledby="hero-title">
+      <div>
+        <span class="eyebrow">AI CRM · WhatsApp · Telegram · Instagram</span>
+        <h1 id="hero-title">Запись клиентов <em>без лишней рутины</em></h1>
+        <p class="lead">Merra Booking помогает принимать записи, хранить контекст клиента и отправлять сообщения — в одной понятной системе.</p>
+        <div class="actions"><a class="button" href="https://wa.me/77751934260">Попробовать демо <span aria-hidden="true">↗</span></a><a class="button secondary" href="#contact">Получить ранний доступ</a></div>
+        <p class="status">Система доступна в демо-режиме</p>
+      </div>
+      <div class="hero-panel" aria-label="Демонстрационный интерфейс расписания">
+        <div class="window"><div class="window-bar"><i></i><i></i><i></i><span class="window-title">merra / overview</span></div><div class="dash">
+          <aside class="dash-side"><div class="dash-brand">Merra</div><div class="dash-nav"><b>Обзор</b><span>Записи</span><span>Клиенты</span><span>Сообщения</span><span>Отчёты</span></div></aside>
+          <div class="dash-main"><h3>Сегодня</h3><p class="dash-sub">Вторник, 12 октября</p><div class="stats"><div class="stat"><small>Записи</small><strong>24</strong></div><div class="stat"><small>Клиенты</small><strong>186</strong></div><div class="stat"><small>Заполнено</small><strong>78%</strong></div></div><div class="calendar"><div class="cal-row"><span class="cal-time">10:00</span><div class="cal-event">Анна · окрашивание</div></div><div class="cal-row"><span class="cal-time">11:30</span><div class="cal-event pink">Мария · стрижка</div></div><div class="cal-row"><span class="cal-time">13:00</span><div class="cal-event green">Свободное окно</div></div><div class="cal-row"><span class="cal-time">14:30</span><div class="cal-event">Ирина · маникюр</div></div></div></div>
+        </div></div>
+      </div>
+    </section>
 
-  <div class="early">Все функции доступны в демо-режиме. Продукт находится в разработке; сайт предназначен для демонстрации проекта, Claude for Startups, Meta и раннего доступа.</div>
+    <div class="notice"><strong>Все функции доступны в демо-режиме.</strong> Продукт находится в разработке; сайт предназначен для демонстрации проекта, Claude for Startups, Meta и раннего доступа.</div>
 
-  <section aria-labelledby="pain-title"><div class="sec-head"><span class="kicker">Главное</span><h2 id="pain-title">Система делает рутину сама</h2><p>Merra Booking объединяет запись, CRM, сообщения, лояльность и операционные задачи в одном рабочем контуре.</p></div>
-    <div class="pain-grid">
-      <article class="card"><span class="tag">Быстрая запись</span><h3>Услуга, мастер, время</h3><p>Клиент выбирает нужное в несколько нажатий — без отдельного приложения и регистрации.</p></article>
-      <article class="card"><span class="tag">CRM</span><h3>Карточка заполняется сама</h3><p>История переписки, особенности и предпочтения клиента собираются в одной карточке.</p></article>
-      <article class="card"><span class="tag">Сообщения</span><h3>Система отвечает сама</h3><p>Подтверждения, напоминания и сообщения после визита отправляются по заданным правилам.</p></article>
-      <article class="card"><span class="tag">Контроль</span><h3>Владелец видит главное</h3><p>Расписание, клиенты, записи, сегменты и рабочие показатели доступны в одном месте.</p></article>
-    </div>
-  </section>
+    <section id="features" aria-labelledby="features-title"><div class="section-head"><span class="eyebrow">Возможности</span><h2 id="features-title">Один рабочий ритм вместо десятка чатов</h2><p>Основные задачи записи и общения собраны вокруг клиента, а не разрозненных инструментов.</p></div>
+      <div class="feature-grid">
+        <article class="feature"><div class="feature-icon" aria-hidden="true">↗</div><h3>Запись сама находит окно</h3><p>Клиент выбирает услугу, мастера и время. Расписание обновляется без двойных записей.</p></article>
+        <article class="feature"><div class="feature-icon" aria-hidden="true">✦</div><h3>Карточка помнит контекст</h3><p>История визитов, предпочтения и заметки сотрудников собраны в одном месте.</p></article>
+        <article class="feature"><div class="feature-icon" aria-hidden="true">◌</div><h3>Сообщения уходят вовремя</h3><p>Подтверждения, напоминания и рассылки работают по правилам, которые задаёте вы.</p></article>
+      </div>
+    </section>
 
-  <section id="how" aria-labelledby="how-title"><div class="sec-head"><span class="kicker">Запись</span><h2 id="how-title">Как это работает</h2><p>Клиенту не нужно открывать отдельный сайт или устанавливать приложение.</p></div>
-    <div class="steps">
-      <div class="step"><div class="num">01</div><div><h3>Клиент выбирает услугу и время</h3><p>Система показывает свободные окна, учитывает мастеров и не допускает двойных записей.</p></div></div>
-      <div class="step"><div class="num">02</div><div><h3>Запись появляется в расписании</h3><p>Администратор и мастер видят её сразу. Подтверждение и напоминание клиенту отправляются автоматически.</p></div></div>
-      <div class="step"><div class="num">03</div><div><h3>Отмена и перенос занимают одно касание</h3><p>Все изменения обновляют расписание и карточку клиента без ручной переписки.</p></div></div>
-    </div>
-  </section>
+    <section id="how" class="split" aria-labelledby="how-title">
+      <div class="copy"><span class="eyebrow">Как это работает</span><h2 id="how-title">От сообщения до записи — спокойно</h2><p>Клиент пишет в привычный мессенджер. Система уточняет детали, показывает свободные окна и сохраняет результат в расписании.</p><a class="button secondary" href="https://wa.me/77751934260">Открыть демо <span aria-hidden="true">↗</span></a></div>
+      <div class="visual" aria-label="Демонстрационный экран записи в телефоне"><div class="phone"><div class="phone-top"></div><strong class="phone-title">Новая запись</strong><p class="phone-muted">Выберите услугу и удобное время</p><div class="bubble">Здравствуйте! Хочу записаться на окрашивание.</div><div class="bubble right">Конечно. Вот свободные окна на завтра:</div><div class="phone-buttons"><b>11:00</b><b>13:30</b><b>15:00</b><b>17:30</b></div></div></div>
+    </section>
 
-  <section id="features" aria-labelledby="features-title"><div class="sec-head"><span class="kicker">Возможности</span><h2 id="features-title">Всё в одной системе</h2><p>Merra Booking объединяет основные задачи владельца и администратора в одном интерфейсе.</p></div>
-    <div class="feature-grid">
-      <article class="card"><span class="tag">CRM</span><h3>Полная карточка клиента</h3><p>История визитов, особенности, предпочтения и заметки сотрудников собраны в одной карточке. Информация из переписки добавляется автоматически.</p></article>
-      <article class="card"><span class="tag">Сегменты</span><h3>Клиенты распределяются сами</h3><p>Система группирует клиентов по частоте визитов, давности последнего визита, услугам и сумме покупок.</p></article>
-      <article class="card"><span class="tag">Защита</span><h3>Рейтинг и блокировка</h3><p>У каждого клиента есть рейтинг. Недобросовестных клиентов можно заблокировать по номеру телефона.</p></article>
-      <article class="card"><span class="tag">Рассылки</span><h3>Сообщения по сегментам</h3><p>Вы выбираете событие, время, текст и группу клиентов. Система отправляет уведомления без лишней рассылки всей базе.</p></article>
-      <article class="card"><span class="tag">Лояльность</span><h3>Скидки, баллы и купоны</h3><p>Промокоды, сертификаты, абонементы, акции и товары собираются в одном конструкторе без программиста.</p></article>
-      <article class="card"><span class="tag">Отчёты</span><h3>Склад и интеграции</h3><p>Сводки выгружаются в Excel и 1С, материалы списываются по услугам, а данные обмениваются с сайтом и другими системами.</p></article>
-    </div>
-  </section>
+    <section class="split reverse" aria-labelledby="crm-title">
+      <div class="copy"><span class="eyebrow">CRM и коммуникации</span><h2 id="crm-title">Меньше ручной работы. Больше контекста.</h2><p>Система объединяет историю визитов, сегменты, рейтинг, рассылки и автоматические сообщения. Команда видит актуальную информацию до начала визита.</p><a class="button secondary" href="#faq">Посмотреть ответы</a></div>
+      <div class="visual" aria-label="Демонстрационная карточка клиентов"><div class="board"><div class="board-head"><strong>Клиенты</strong><span>Все сегменты⌄</span></div><div class="board-list"><div class="person"><div class="avatar">АИ</div><div><strong>Анна Иванова</strong><small>Окрашивание · сегодня</small></div><em>Новый визит</em></div><div class="person"><div class="avatar">МК</div><div><strong>Мария Ким</strong><small>Стрижка · 14 сентября</small></div><em>Лояльный</em></div><div class="person"><div class="avatar">ИС</div><div><strong>Ирина Смирнова</strong><small>Маникюр · 2 сентября</small></div><em>Напомнить</em></div></div></div></div>
+    </section>
 
-  <section aria-labelledby="compare-title"><div class="sec-head"><span class="kicker">Настройка</span><h2 id="compare-title">Быстрый старт и полная настройка</h2><p>Владелец самостоятельно меняет данные предприятия, услуги, мастеров, права сотрудников и включённые функции.</p></div>
-    <div class="compare-grid">
-      <article class="card"><h3>Данные под контролем</h3><p>Клиентов можно импортировать из Excel, CSV и 1С, а результаты работы выгружать обратно.</p></article>
-      <article class="card"><h3>Функции включаются по необходимости</h3><p>Запись, CRM, сообщения, лояльность, склад и интеграции настраиваются под конкретный бизнес.</p></article>
-    </div>
-  </section>
+    <section aria-labelledby="more-title"><div class="section-head"><span class="eyebrow">Рабочая система</span><h2 id="more-title">Подстраивается под ваш бизнес</h2><p>Включайте только те модули, которые нужны сейчас. Остальные настройки остаются рядом.</p></div>
+      <div class="details-grid">
+        <details><summary>Лояльность и акции</summary><p>Скидки, баллы, купоны, сертификаты, абонементы и промокоды собираются в одном конструкторе.</p></details>
+        <details><summary>Отчёты и склад</summary><p>Сводки за день, неделю и месяц, списание материалов по услугам и выгрузка в Excel и 1С.</p></details>
+        <details><summary>Интеграции и импорт</summary><p>Подключение сайта и внешних систем, импорт и экспорт данных в нужном формате.</p></details>
+        <details><summary>Настройки доступа</summary><p>Данные предприятия, услуги, мастера и права сотрудников можно менять самостоятельно.</p></details>
+      </div>
+    </section>
 
-  <section id="contact" aria-labelledby="contact-title"><div class="sec-head"><span class="kicker">Ранний доступ</span><h2 id="contact-title">Получите систему первыми</h2><p>Оставьте заявку или откройте демо. Вопросы по проекту: <a href="mailto:team@merrabooking.me" style="color:var(--amber-l)">team@merrabooking.me</a>.</p></div>
-    <div class="about-grid"><article class="card"><h3>Для первого знакомства</h3><p>Откройте демонстрационный WhatsApp-сценарий и пройдите запись как клиент.</p></article><article class="card"><h3>Для партнёров и программ</h3><p>Описание продукта, архитектуры и планов доступно для Claude for Startups, Meta и других партнёрских программ.</p></article></div>
-  </section>
+    <section id="faq" aria-labelledby="faq-title"><div class="section-head"><span class="eyebrow">Вопросы</span><h2 id="faq-title">Коротко о главном</h2></div>
+      <div class="details-grid">
+        <details><summary>Для какого бизнеса подходит?</summary><p>Для салонов, барбершопов, студий, клиник и других компаний, где клиенты записываются на время.</p></details>
+        <details><summary>Какие мессенджеры поддерживаются?</summary><p>Основной демо-сценарий работает через WhatsApp. Архитектура предусматривает подключение Telegram, Instagram и других каналов.</p></details>
+        <details><summary>Что происходит с данными?</summary><p>Данные используются для работы сервиса. Не отправляйте в демо пароли, платёжные данные, документы или медицинскую информацию. Подробности — в <a href="privacy.html" style="text-decoration:underline">политике конфиденциальности</a>.</p></details>
+        <details><summary>Можно ли перенести клиентов?</summary><p>Предусмотрен импорт из Excel, CSV и 1С, а также экспорт данных.</p></details>
+      </div>
+    </section>
 
-  <section id="faq" aria-labelledby="faq-title"><div class="sec-head"><span class="kicker">Вопросы</span><h2 id="faq-title">Что важно знать заранее</h2></div>
-    <div class="faq">
-      <details><summary>Сколько это стоит?</summary><p>Условия раннего доступа и коммерческого запуска обсуждаются отдельно.</p></details>
-      <details><summary>Нужно ли разбираться в технике?</summary><p>Нет. Интерфейс рассчитан на ежедневную работу администратора без специальных технических знаний.</p></details>
-      <details><summary>Что происходит с данными клиентов?</summary><p>Данные обрабатываются только для работы сервиса. Не отправляйте в демо пароли, платёжные данные, документы или медицинскую информацию. Подробности описаны в <a href="privacy.html" style="color:var(--amber-l)">политике конфиденциальности</a>.</p></details>
-      <details><summary>Какие мессенджеры поддерживаются?</summary><p>Основной сценарий работает через WhatsApp. Архитектура также предусматривает подключение Telegram, Instagram и других каналов.</p></details>
-      <details><summary>Можно ли перенести клиентов из другой системы?</summary><p>Да. Предусмотрен импорт из Excel, CSV и 1С, а также экспорт данных.</p></details>
-      <details><summary>Для какого бизнеса подходит Merra Booking?</summary><p>Для бизнеса, где клиенты записываются на время: салоны, барбершопы, студии и другие сервисные компании.</p></details>
-    </div>
-  </section>
+    <section id="contact" class="cta" aria-labelledby="contact-title"><span class="eyebrow" style="color:#bdbdb8">Демо и ранний доступ</span><h2 id="contact-title">Посмотрите, как это ощущается в работе</h2><p>Откройте демо или напишите по вопросам проекта: team@merrabooking.me</p><div class="actions"><a class="button" style="background:var(--white);color:var(--ink);border-color:var(--white)" href="https://wa.me/77751934260">Попробовать демо <span aria-hidden="true">↗</span></a><a class="button secondary" href="mailto:team@merrabooking.me">Написать мне</a></div></section>
+  </div>
+</main>
 
-  <div class="band"><div><h2>Попробуйте демо</h2><p>Пройдите запись как клиент и посмотрите, как Merra Booking обрабатывает сценарий.</p></div><div class="ctas"><a class="pill" href="https://wa.me/77751934260">Попробовать демо</a><a class="pill ghost" href="mailto:team@merrabooking.me">Получить ранний доступ</a></div></div>
-</div></main>
-
-<footer><div class="wrap"><div class="cols"><div><span class="lbl">Merra Booking</span><p>AI CRM для записи клиентов, автоматических сообщений и управления сервисным бизнесом.</p></div><div><span class="lbl">На странице</span><a href="#features">Возможности</a><a href="#how">Как это работает</a><a href="#faq">Вопросы</a><a href="#contact">Написать мне</a></div><div><span class="lbl">Документы</span><a href="privacy.html">Политика конфиденциальности</a><a href="terms.html">Условия использования</a><a href="data-deletion/">Удаление данных</a><a href="mailto:team@merrabooking.me">team@merrabooking.me</a></div></div><div class="foot-note"><span>© 2026 Merra Booking</span><span>merrabooking.me · Demo mode</span></div></div></footer>
+<footer><div class="wrap"><div class="footer-grid"><div><div class="footer-title">Merra<span style="color:#d27da8">·</span>Booking</div><p>AI CRM для записи клиентов, сообщений и управления сервисным бизнесом.</p></div><div><span class="footer-label">На странице</span><a href="#features">Возможности</a><a href="#how">Как это работает</a><a href="#faq">Вопросы</a></div><div><span class="footer-label">Документы</span><a href="privacy.html">Политика конфиденциальности</a><a href="terms.html">Условия использования</a><a href="data-deletion/">Удаление данных</a><a href="mailto:team@merrabooking.me">team@merrabooking.me</a></div></div><div class="foot-note"><span>© 2026 Merra Booking</span><span>merrabooking.me · Demo mode</span></div></div></footer>
 <script>
-  const toggle=document.querySelector('.menu-toggle'); const menu=document.querySelector('#main-nav');
-  const closeMenu=()=>{menu.dataset.open='false';toggle.setAttribute('aria-expanded','false');toggle.setAttribute('aria-label','Открыть меню');};
-  toggle.addEventListener('click',()=>{const open=menu.dataset.open!=='true';menu.dataset.open=String(open);toggle.setAttribute('aria-expanded',String(open));toggle.setAttribute('aria-label',open?'Закрыть меню':'Открыть меню');if(open)menu.querySelector('a').focus();});
+  const toggle=document.querySelector('.menu-toggle');const menu=document.querySelector('#main-nav');
+  const closeMenu=()=>{menu.dataset.open='false';toggle.setAttribute('aria-expanded','false');toggle.setAttribute('aria-label','Открыть меню')};
+  toggle.addEventListener('click',()=>{const open=menu.dataset.open!=='true';menu.dataset.open=String(open);toggle.setAttribute('aria-expanded',String(open));toggle.setAttribute('aria-label',open?'Закрыть меню':'Открыть меню');if(open)menu.querySelector('a').focus()});
   menu.querySelectorAll('a').forEach(link=>link.addEventListener('click',closeMenu));
-  document.addEventListener('keydown',event=>{if(event.key==='Escape'&&menu.dataset.open==='true'){closeMenu();toggle.focus();}});
+  document.addEventListener('keydown',event=>{if(event.key==='Escape'&&menu.dataset.open==='true'){closeMenu();toggle.focus()}});
 </script>
 </body>
 </html>
