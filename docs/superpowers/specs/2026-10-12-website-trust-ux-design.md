@@ -1,6 +1,6 @@
-# Merra Booking website trust and UX design
+﻿# Merra Booking website trust and UX design
 
-**Status:** Design approved in chat; implementation pending written-spec review  
+**Status:** Implemented and published
 **Date:** 2026-10-12  
 **Scope:** Static pre-launch website at `merrabooking.me`
 

@@ -4,10 +4,11 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Политика конфиденциальности — Merra Booking</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@400;500;600;700&family=DM+Mono&display=swap" rel="stylesheet">
 <style>
+  @font-face { font-family:'Bebas Neue'; src:url('assets/fonts/bebas-neue.ttf') format('truetype'); font-weight:400; font-display:swap; }
+  @font-face { font-family:'DM Sans'; src:url('assets/fonts/dm-sans-400.ttf') format('truetype'); font-weight:400; font-display:swap; }
+  @font-face { font-family:'DM Sans'; src:url('assets/fonts/dm-sans-700.ttf') format('truetype'); font-weight:700; font-display:swap; }
+  @font-face { font-family:'DM Mono'; src:url('assets/fonts/dm-mono-400.ttf') format('truetype'); font-weight:400; font-display:swap; }
   * { margin:0; padding:0; box-sizing:border-box; }
   :root { --bg0:#0D0D0D; --card:#1A1A1A; --line:#2A2A2A; --line2:#3a3a3a; --amber:#EF9F27; --teal:#1D9E75;
           --txt:#F5F3EE; --mut:#888888; --dim:#555555;
@@ -51,7 +52,7 @@
     <li>технические данные, необходимые для безопасности и работы сайта;</li>
     <li>данные, которые пользователь добровольно отправляет по email.</li>
   </ul>
-  <p>Аналитика, рекламные пиксели и сторонние трекеры не используются. Для отображения шрифтов сайт загружает ресурсы Google Fonts; при этом поставщику могут передаваться стандартные технические данные HTTP-запроса, например IP-адрес и сведения о браузере.</p>
+  <p>Аналитика, рекламные пиксели и сторонние трекеры не используются. Шрифты сайта размещены локально и не загружаются из Google Fonts.</p>
   <h2 style="font-size:15px; color:var(--mut); margin-top:20px">Демонстрационный WhatsApp-бот</h2>
   <ul>
     <li>номер WhatsApp;</li>
@@ -80,7 +81,6 @@
     <li><strong>Meta / WhatsApp</strong> — передача и доставка сообщений; часть технических данных обрабатывает Meta по своим условиям;</li>
     <li><strong>Cloudflare</strong> — DNS, проксирование, защита и технические журналы;</li>
     <li><strong>GitHub Pages (GitHub, Inc., США)</strong> — хостинг статических страниц сайта;</li>
-    <li><strong>Google Fonts (Google LLC, США)</strong> — загрузка шрифтов, используемых для оформления сайта;</li>
     <li><strong>AI-провайдер (Claude API от Anthropic)</strong> — только после отдельного включения ИИ-функции: могут передаваться текст диалога и справочные данные заведения, необходимые для ответа; номер телефона не должен передаваться в AI-запросе. До запуска такой функции её обработка и сроки хранения будут описаны дополнительно.</li>
   </ul>
   <p>База данных демонстрационного контура размещена на инфраструктуре оператора в Казахстане.</p>
@@ -88,7 +88,10 @@
   <h2>6. Передача данных</h2>
   <p>Внешние поставщики могут обрабатывать данные на инфраструктуре за пределами Казахстана (США и глобальная edge-сеть), поскольку это фактически определяется расположением их инфраструктуры.</p>
 
-  <h2>7. Права пользователя</h2>
+  <h2>7. Cookies и локальное хранение</h2>
+  <p>Сайт не использует необязательные аналитические, рекламные или маркетинговые cookies и не создаёт пользовательский аккаунт. GitHub Pages и Cloudflare могут применять строго необходимые технические механизмы безопасности, управляемые соответствующими поставщиками. В интерфейсе сайта нет трекеров или рекламных пикселей.</p>
+
+  <h2>8. Права пользователя</h2>
   <ul>
     <li>запросить сведения об обработке данных;</li>
     <li>попросить исправить данные;</li>
@@ -98,7 +101,7 @@
   </ul>
   <p>Для защиты от запросов посторонних лиц может потребоваться подтверждение принадлежности номера или диалога.</p>
 
-  <h2>8. Изменения</h2>
+  <h2>9. Изменения</h2>
   <p>Политика может изменяться; новая версия публикуется на этой странице. Дата вступления в силу — 11 октября 2026 года, последнее обновление — 11 октября 2026 года.</p>
 
   <div class="divider">
@@ -112,7 +115,7 @@
     </div>
 
     <h2>2. Data processed</h2>
-    <p><em>Website:</em> technical data required for security and operation; data the user voluntarily sends by email. No analytics, ad pixels or third-party trackers are used. The site loads fonts from Google Fonts; standard technical request data, such as the IP address and browser information, may be received by that provider.</p>
+    <p><em>Website:</em> technical data required for security and operation; data the user voluntarily sends by email. No analytics, ad pixels or third-party trackers are used. The site's display fonts are self-hosted and are not loaded from Google Fonts.</p>
     <p><em>Demo WhatsApp bot:</em> WhatsApp number; profile name if provided by WhatsApp; message text; selected service, date and time of the demonstration booking; minimal technical metadata and security logs.</p>
 
     <h2>3. Purposes</h2>
@@ -126,7 +129,6 @@
       <li><strong>Meta / WhatsApp</strong> — message delivery; some technical data is processed by Meta under its own terms;</li>
       <li><strong>Cloudflare</strong> — DNS, proxying, protection and technical logs;</li>
       <li><strong>GitHub Pages (GitHub, Inc., USA)</strong> — hosting of the static site pages;</li>
-      <li><strong>Google Fonts (Google LLC, USA)</strong> — delivery of the fonts used for the site design;</li>
       <li><strong>AI provider (Claude API by Anthropic)</strong> — only after the AI feature is separately enabled: dialog text and venue reference data needed for a reply may be sent; the phone number should not be included in the AI request. The processing details and retention period will be documented before this feature launches.</li>
     </ul>
     <p>The demo database is hosted on operator infrastructure in Kazakhstan.</p>
@@ -134,7 +136,10 @@
     <h2>6. Data transfers</h2>
     <p>External providers may process data on infrastructure located outside Kazakhstan (USA and the global edge network), as determined by the actual location of their infrastructure.</p>
 
-    <h2>7. User rights</h2>
+    <h2>7. Cookies and local storage</h2>
+    <p>The site does not use optional analytics, advertising or marketing cookies and does not create user accounts. GitHub Pages and Cloudflare may apply strictly necessary technical security mechanisms controlled by those providers. The site has no trackers or advertising pixels.</p>
+
+    <h2>8. User rights</h2>
     <ul>
       <li>request information about data processing;</li>
       <li>request correction;</li>
@@ -144,7 +149,7 @@
     </ul>
     <p>To protect against third-party requests, proof of ownership of the number or dialogue may be required.</p>
 
-    <h2>8. Changes</h2>
+    <h2>9. Changes</h2>
     <p>This policy may change; new versions are published on this page. Effective date: October 11, 2026; last updated: October 11, 2026.</p>
   </div>
 </div>
