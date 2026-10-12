@@ -40,7 +40,7 @@
   <h2>1. Оператор и статус проекта</h2>
   <p>Оператором обработки данных демонстрационного проекта Merra Booking является <strong style="color:var(--txt)">Рамазанов Адиль Даниярович</strong>, физическое лицо, осуществляющее разработку проекта в Республике Казахстан.</p>
   <p>Город: Костанай, Республика Казахстан.</p>
-  <p>Контакт по вопросам обработки данных: <a href="mailto:privacy@merrabooking.me">privacy@merrabooking.me</a>.</p>
+  <p>Контакт по вопросам обработки данных: <a href="mailto:team@merrabooking.me">team@merrabooking.me</a>.</p>
   <div class="card">
     <p>Merra Booking — независимый pre-launch/demo-проект. Разработчик — физическое лицо; регистрация ИП/ТОО пока отсутствует. Сайт не является полноценным коммерческим SaaS-сервисом: формы регистрации, подключения партнёров и оплаты отключены. Демонстрационный бот не предназначен для реальных клиентских, медицинских, платёжных или иных чувствительных данных. До включения соответствующих функций информация об операторе, поставщиках и способах обработки будет обновлена.</p>
   </div>
@@ -51,7 +51,7 @@
     <li>технические данные, необходимые для безопасности и работы сайта;</li>
     <li>данные, которые пользователь добровольно отправляет по email.</li>
   </ul>
-  <p>Аналитика, рекламные пиксели и сторонние трекеры не используются.</p>
+  <p>Аналитика, рекламные пиксели и сторонние трекеры не используются. Для отображения шрифтов сайт загружает ресурсы Google Fonts; при этом поставщику могут передаваться стандартные технические данные HTTP-запроса, например IP-адрес и сведения о браузере.</p>
   <h2 style="font-size:15px; color:var(--mut); margin-top:20px">Демонстрационный WhatsApp-бот</h2>
   <ul>
     <li>номер WhatsApp;</li>
@@ -73,14 +73,15 @@
   <p>Данные не используются для рекламы, продажи баз или маркетинговых рассылок.</p>
 
   <h2>4. Хранение</h2>
-  <p>Диалоги с демонстрационным WhatsApp-ботом хранятся ограниченное время и удаляются по запросу (см. страницу <a href="/data-deletion/">удаления данных</a>). Технические журналы могут храниться ограниченный срок, необходимый для защиты сервиса и расследования инцидентов.</p>
+  <p>Публичный сайт сам по себе не хранит диалоги. Данные демонстрационного WhatsApp-бота хранятся ограниченное время в зависимости от действующей конфигурации demo-контура и удаляются по запросу (см. страницу <a href="/data-deletion/">удаления данных</a>). Конкретный автоматический срок хранения будет опубликован до запуска production-функций. Технические журналы могут храниться ограниченный срок, необходимый для защиты сервиса и расследования инцидентов.</p>
 
   <h2>5. Получатели и внешние сервисы</h2>
   <ul>
     <li><strong>Meta / WhatsApp</strong> — передача и доставка сообщений; часть технических данных обрабатывает Meta по своим условиям;</li>
     <li><strong>Cloudflare</strong> — DNS, проксирование, защита и технические журналы;</li>
     <li><strong>GitHub Pages (GitHub, Inc., США)</strong> — хостинг статических страниц сайта;</li>
-    <li><strong>AI-провайдер (OpenAI)</strong> — только если включена функция ИИ-ответов (по умолчанию отключена): передаются текст диалога и справочные данные заведения, необходимые для ответа; номер телефона не передаётся; данные не используются для обучения моделей согласно условиям API-сервиса; функция может быть отключена Партнёром в любой момент.</li>
+    <li><strong>Google Fonts (Google LLC, США)</strong> — загрузка шрифтов, используемых для оформления сайта;</li>
+    <li><strong>AI-провайдер (Claude API от Anthropic)</strong> — только после отдельного включения ИИ-функции: могут передаваться текст диалога и справочные данные заведения, необходимые для ответа; номер телефона не должен передаваться в AI-запросе. До запуска такой функции её обработка и сроки хранения будут описаны дополнительно.</li>
   </ul>
   <p>База данных демонстрационного контура размещена на инфраструктуре оператора в Казахстане.</p>
 
@@ -93,7 +94,7 @@
     <li>попросить исправить данные;</li>
     <li><a href="/data-deletion/">запросить удаление demo-диалога</a>;</li>
     <li>прекратить дальнейшее взаимодействие с ботом;</li>
-    <li>направить обращение на <a href="mailto:privacy@merrabooking.me">privacy@merrabooking.me</a>.</li>
+    <li>направить обращение на <a href="mailto:team@merrabooking.me">team@merrabooking.me</a>.</li>
   </ul>
   <p>Для защиты от запросов посторонних лиц может потребоваться подтверждение принадлежности номера или диалога.</p>
 
@@ -105,27 +106,28 @@
     <p class="meta">Effective date: October 11, 2026 · Last updated: October 11, 2026 · merrabooking.me</p>
 
     <h2>1. Operator and project status</h2>
-    <p>The operator of the Merra Booking demonstration project is <strong style="color:var(--txt)">Ramazanov Adil Daniyarovich</strong>, an individual developing the project in the Republic of Kazakhstan. City: Kostanay, Republic of Kazakhstan. Data-protection contact: <a href="mailto:privacy@merrabooking.me">privacy@merrabooking.me</a>.</p>
+    <p>The operator of the Merra Booking demonstration project is <strong style="color:var(--txt)">Ramazanov Adil Daniyarovich</strong>, an individual developing the project in the Republic of Kazakhstan. City: Kostanay, Republic of Kazakhstan. Data-protection contact: <a href="mailto:team@merrabooking.me">team@merrabooking.me</a>.</p>
     <div class="card">
       <p>Merra Booking is an independent pre-launch/demo project. The developer is an individual; no sole-proprietor or company registration exists yet. The site is not a full commercial SaaS service: registration, partner onboarding and payment forms are disabled. The demo bot is not intended for real client, medical, payment or other sensitive data. Operator, subprocessor and processing details will be updated before any such features are enabled.</p>
     </div>
 
     <h2>2. Data processed</h2>
-    <p><em>Website:</em> technical data required for security and operation; data the user voluntarily sends by email. No analytics, ad pixels or third-party trackers are used.</p>
+    <p><em>Website:</em> technical data required for security and operation; data the user voluntarily sends by email. No analytics, ad pixels or third-party trackers are used. The site loads fonts from Google Fonts; standard technical request data, such as the IP address and browser information, may be received by that provider.</p>
     <p><em>Demo WhatsApp bot:</em> WhatsApp number; profile name if provided by WhatsApp; message text; selected service, date and time of the demonstration booking; minimal technical metadata and security logs.</p>
 
     <h2>3. Purposes</h2>
     <p>Demonstration of the booking flow, replying to messages, testing the WhatsApp integration, technical support, protection against spam and abuse, and handling deletion requests. Data is not used for advertising, database sales or marketing campaigns.</p>
 
     <h2>4. Storage</h2>
-    <p>Demo bot dialogues are stored for a limited time and deleted on request (see the <a href="/data-deletion/">data deletion page</a>). Technical logs may be kept for a limited period required to protect the service and investigate incidents.</p>
+    <p>The public website itself does not store dialogues. Demo bot data is stored for a limited time according to the active demo configuration and deleted on request (see the <a href="/data-deletion/">data deletion page</a>). The specific automatic retention period will be published before production features are launched. Technical logs may be kept for a limited period required to protect the service and investigate incidents.</p>
 
     <h2>5. Recipients and external services</h2>
     <ul>
       <li><strong>Meta / WhatsApp</strong> — message delivery; some technical data is processed by Meta under its own terms;</li>
       <li><strong>Cloudflare</strong> — DNS, proxying, protection and technical logs;</li>
       <li><strong>GitHub Pages (GitHub, Inc., USA)</strong> — hosting of the static site pages;</li>
-      <li><strong>AI provider (OpenAI)</strong> — only if the AI-replies feature is enabled (off by default): the dialog text and venue reference data needed for the reply are sent; the phone number is not sent; data is not used for model training per the API service terms; the Partner can disable the feature at any time.</li>
+      <li><strong>Google Fonts (Google LLC, USA)</strong> — delivery of the fonts used for the site design;</li>
+      <li><strong>AI provider (Claude API by Anthropic)</strong> — only after the AI feature is separately enabled: dialog text and venue reference data needed for a reply may be sent; the phone number should not be included in the AI request. The processing details and retention period will be documented before this feature launches.</li>
     </ul>
     <p>The demo database is hosted on operator infrastructure in Kazakhstan.</p>
 
@@ -138,7 +140,7 @@
       <li>request correction;</li>
       <li><a href="/data-deletion/">request deletion of a demo dialogue</a>;</li>
       <li>stop further interaction with the bot;</li>
-      <li>contact <a href="mailto:privacy@merrabooking.me">privacy@merrabooking.me</a>.</li>
+      <li>contact <a href="mailto:team@merrabooking.me">team@merrabooking.me</a>.</li>
     </ul>
     <p>To protect against third-party requests, proof of ownership of the number or dialogue may be required.</p>
 
